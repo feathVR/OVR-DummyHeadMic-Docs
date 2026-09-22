@@ -1,0 +1,30 @@
+:root {
+  --ifm-color-primary: #007eaa;
+  --ifm-color-primary-dark: #007198;
+  --ifm-color-primary-darker: #006b90;
+  --ifm-color-primary-light: #008bbd;
+  --ifm-color-primary-lighter: #0091c5;
+  --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.75;
+  --ifm-navbar-height: 4rem;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #35d8ff;
+  --ifm-color-primary-dark: #18d2ff;
+  --ifm-color-primary-darker: #09ceff;
+  --ifm-color-primary-light: #52deff;
+  --ifm-background-color: #07101f;
+  --ifm-background-surface-color: #101d33;
+}
+
+body { letter-spacing: 0.01em; }
+.markdown h1 { letter-spacing: -0.025em; }
+.markdown table { display: table; width: 100%; }
+.navbar__title { font-weight: 750; letter-spacing: -0.02em; }
+.guide-hero { margin: 1.5rem 0 2rem; border-radius: 0.8rem; box-shadow: 0 12px 32px rgb(0 0 0 / 18%); }
+
+@media (max-width: 700px) {
+  :root { --ifm-font-size-base: 16px; }
+}

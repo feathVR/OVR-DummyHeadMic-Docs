@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "OVR-DummyHeadMic",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "OVR-DummyHeadMic",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.操作ガイド": {
+    "message": "User Guide",
+    "description": "Navbar item with label 操作ガイド"
+  },
+  "item.label.VRChatカメラ同期": {
+    "message": "VRChat Camera Sync",
+    "description": "Navbar item with label VRChatカメラ同期"
+  },
+  "item.label.困ったとき": {
+    "message": "Troubleshooting",
+    "description": "Navbar item with label 困ったとき"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
