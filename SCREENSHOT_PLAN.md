@@ -6,6 +6,9 @@
 | --- | --- | --- | --- |
 | `static/img/screenshots/ja/basic-guide.png` | `getting-started/first-sound` | 初回設定、OBS、基本操作の全体像 | Existing guide artwork; review with current build |
 | `static/img/screenshots/ja/vrchat-camera-sync.png` | `vrchat-camera/calibration` | VRChatカメラ同期の初回手順 | Existing guide artwork; review with current build |
+| `static/img/screenshots/en/app-window-en.png` | `operation/sound` | 最新ビルドの英語Main settings実画面 | Captured from v1.10 build on 2026-09-23 |
+| `static/img/screenshots/en/basic-guide.png` | `getting-started/first-sound` | 基本ガイドの英語版 | Localized from the Japanese guide artwork; reviewed |
+| `static/img/screenshots/en/vrchat-camera-sync.png` | `vrchat-camera/calibration` | カメラ同期ガイドの英語版 | Localized from the Japanese guide artwork; reviewed |
 
 ## 図解（コードで描く図）
 

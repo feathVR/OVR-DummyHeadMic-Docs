@@ -1,5 +1,9 @@
 # Spatial audio settings
 
+![Current English Main settings screen](/img/screenshots/en/app-window-en.png)
+
+_The current English Main settings screen, captured from the application. It includes the spatial-audio toggle, dummy-head type, room preset, output volume, placement direction, and arm-menu settings._
+
 ## Toggle spatial audio
 
 Press left-hand Y + right-hand B, or the B buttons on both hands, at the same time to toggle spatial audio processing. The dummy head is white when ON and red when OFF.

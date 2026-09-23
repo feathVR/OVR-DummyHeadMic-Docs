@@ -10,7 +10,7 @@ For your first check, place the dummy head manually and verify the sound without
 6. Move to either side of the dummy head and confirm that the apparent voice position changes.
 7. If you are streaming or recording, configure [audio capture in OBS](../audio/obs).
 
-![Basic OVR-DummyHeadMic setup and operation](/img/screenshots/ja/basic-guide.png)
+![Basic OVR-DummyHeadMic setup and operation](/img/screenshots/en/basic-guide.png)
 
 _An overview of input and output, OBS capture, moving the position, and switching spatial audio._
 
