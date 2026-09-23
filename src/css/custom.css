@@ -28,3 +28,95 @@ body { letter-spacing: 0.01em; }
 @media (max-width: 700px) {
   :root { --ifm-font-size-base: 16px; }
 }
+
+/* ---- 図解：OBSへの取り込み（src/components/ObsFlowFigure.jsx） ---- */
+.obsflow {
+  --of-panel: #f4f8fd;
+  --of-line: #c9d6ea;
+  --of-accent: #007eaa;
+  --of-accent-ink: #ffffff;
+  --of-ng: #d42a72;
+  --of-ng-bg: rgb(212 42 114 / 6%);
+  --of-ok: #14875a;
+  --of-text: inherit;
+  --of-sub: #52617d;
+  margin: 1.5rem 0 2rem;
+  color: var(--of-text);
+}
+html[data-theme='dark'] .obsflow,
+.obsflow--poster {
+  --of-panel: #121a33;
+  --of-line: #2a3766;
+  --of-accent: #27c4f5;
+  --of-accent-ink: #06122a;
+  --of-ng: #ff4f9a;
+  --of-ng-bg: rgb(255 79 154 / 8%);
+  --of-ok: #3ee08f;
+  --of-sub: #9fb0d8;
+}
+.obsflow__flow { display: flex; align-items: stretch; }
+.obsflow__node {
+  flex: 1 1 0; min-width: 0; position: relative;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 1.4rem 0.8rem 1.1rem;
+  background: var(--of-panel); border: 2px solid var(--of-line); border-radius: 14px;
+}
+.obsflow__node--hl { border-color: var(--of-accent); box-shadow: 0 0 22px color-mix(in srgb, var(--of-accent) 30%, transparent); }
+.obsflow__badge {
+  position: absolute; top: 0; left: 50%; transform: translate(-50%, -55%);
+  background: var(--of-accent); color: var(--of-accent-ink);
+  font-weight: 700; font-size: 0.78em; line-height: 1.3; padding: 0.15em 0.8em; border-radius: 999px; white-space: nowrap;
+}
+.obsflow__icon {
+  width: 3.2em; height: 3.2em; margin-bottom: 0.5em;
+  fill: none; stroke: var(--of-accent); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round;
+}
+.obsflow__rec { fill: var(--of-ng); stroke: none; }
+.obsflow__name { font-weight: 700; font-size: 1.05em; line-height: 1.3; }
+.obsflow__note { font-size: 0.82em; color: var(--of-sub); margin-top: 0.4em; line-height: 1.5; text-wrap: balance; }
+.obsflow__arrow { flex: 0 0 2.4em; display: flex; align-items: center; justify-content: center; }
+.obsflow__arrow svg { width: 1.8em; height: 1.4em; fill: none; stroke: var(--of-accent); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+.obsflow__bottom { display: flex; gap: 1.2rem; margin-top: 1.4rem; }
+.obsflow__bottom h2 { font-size: 1.05em; margin: 0 0 0.6em; }
+.obsflow__steps { flex: 1.25; background: var(--of-panel); border: 2px solid var(--of-line); border-radius: 14px; padding: 1.1rem 1.4rem; }
+.obsflow__steps ol { list-style: none; counter-reset: of; margin: 0; padding: 0; }
+.obsflow__steps li { counter-increment: of; display: flex; gap: 0.6em; align-items: baseline; margin: 0.35em 0; line-height: 1.4; }
+.obsflow__steps li::before {
+  content: counter(of); flex: none; width: 1.5em; height: 1.5em; border-radius: 50%;
+  background: var(--of-accent); color: var(--of-accent-ink); font-weight: 700; font-size: 0.85em;
+  display: flex; align-items: center; justify-content: center; transform: translateY(0.15em);
+}
+.obsflow__steps b { color: var(--of-accent); }
+.obsflow__ok { color: var(--of-ok); font-weight: 700; }
+.obsflow__ng { flex: 1; background: var(--of-ng-bg); border: 2px solid var(--of-ng); border-radius: 14px; padding: 1.1rem 1.4rem; }
+.obsflow__ng h2 { color: var(--of-ng); }
+.obsflow__ng p { margin: 0.7em 0 0; line-height: 1.55; }
+.obsflow__ngrow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7em; font-weight: 700; }
+.obsflow__pill { border: 2px solid var(--of-line); border-radius: 8px; padding: 0.2em 0.7em; background: var(--of-panel); }
+.obsflow__x { color: var(--of-ng); font-size: 1.5em; line-height: 1; }
+
+/* スマホ：縦に並べて矢印を下向きに */
+@media (max-width: 700px) {
+  .obsflow:not(.obsflow--poster) .obsflow__flow { flex-direction: column; }
+  .obsflow:not(.obsflow--poster) .obsflow__node { padding: 1.3rem 1rem 1rem; }
+  .obsflow:not(.obsflow--poster) .obsflow__arrow { flex-basis: 2.2em; transform: rotate(90deg); }
+  .obsflow:not(.obsflow--poster) .obsflow__bottom { flex-direction: column; }
+}
+
+/* PNG書き出し用ポスター（src/pages/figures/obs-flow.jsx）：1600×900固定・常に暗色 */
+.obsflow--poster {
+  width: 1600px; height: 900px; margin: 0; padding: 44px 56px; box-sizing: border-box; overflow: hidden;
+  font-size: 23px; color: #e9eefc;
+  background: radial-gradient(ellipse at 20% 0%, #16224a 0%, #0b1020 60%);
+  font-family: "BIZ UDPGothic", "Yu Gothic UI", "Meiryo", "Segoe UI", sans-serif;
+}
+.obsflow--poster .obsflow__head h1 { font-size: 56px; margin: 0; letter-spacing: 0.01em; }
+.obsflow--poster .obsflow__head h1 em { font-style: normal; color: var(--of-accent); }
+.obsflow--poster .obsflow__head p { font-size: 26px; color: var(--of-sub); margin: 8px 0 0; }
+.obsflow--poster .obsflow__flow { margin-top: 40px; height: 300px; }
+.obsflow--poster .obsflow__node { font-size: 26px; }
+.obsflow--poster .obsflow__arrow { flex-basis: 64px; }
+.obsflow--poster .obsflow__arrow svg { width: 52px; height: 40px; }
+.obsflow--poster .obsflow__bottom { margin-top: 40px; gap: 28px; }
+.obsflow--poster .obsflow__steps li { margin: 0.25em 0; }
+.obsflow--poster .obsflow__bottom h2 { font-size: 27px; }

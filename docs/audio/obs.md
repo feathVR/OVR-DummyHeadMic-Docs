@@ -1,3 +1,5 @@
+import ObsFlowFigure from "@site/src/components/ObsFlowFigure";
+
 # OBSへの取り込み
 
 1. OBSで対象のシーンを開きます。
@@ -5,6 +7,8 @@
 3. OVR-DummyHeadMicで設定した出力デバイスを選びます。
 4. マイクへ話し、OBSの音量メーターが動くことを確認します。
 5. OBS側の通常のマイク入力はミュートします。
+
+<ObsFlowFigure />
 
 :::danger 生の声との二重取り込みに注意
 OVR-DummyHeadMicの処理音とOBSのマイク入力を同時に有効にすると、生の声と空間音声が二重に配信されます。原則としてOBS側の通常のマイク入力をミュートしてください。

@@ -1,3 +1,5 @@
+import ObsFlowFigure from "@site/src/components/ObsFlowFigure";
+
 # Capture audio in OBS
 
 1. Open the scene you want to use in OBS.
@@ -5,6 +7,8 @@
 3. Select the output device configured in OVR-DummyHeadMic.
 4. Speak into the microphone and confirm that the OBS audio meter moves.
 5. Mute the regular microphone input in OBS.
+
+<ObsFlowFigure />
 
 :::danger Avoid capturing the unprocessed voice twice
 If both the processed OVR-DummyHeadMic audio and the OBS microphone input are enabled, the unprocessed voice and spatial audio will both be streamed. As a rule, mute the regular microphone input in OBS.
