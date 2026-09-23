@@ -1,5 +1,14 @@
 # Common issues
 
+## No window appears after starting the app
+
+OVR-DummyHeadMic starts without showing a window and sits in the Windows system tray (the notification area at the bottom right of the screen).
+
+- Click the OVR-DummyHeadMic tray icon to open the settings window. If you cannot see the icon, open the “^” in the notification area.
+- Right-click the icon to choose **Open Settings** or **Exit OVR-DummyHeadMic**.
+- The window's close button (×) does not quit the app; it returns the app to the tray. To quit, use the tray menu.
+- To start with the window visible instead of in the tray, add the `-showwindow` launch option.
+
 ## No audio
 
 - Check whether **Audio route** is Normal or VST bridge. Choose Normal if you are not using a DAW.
