@@ -12,9 +12,13 @@ OVR-DummyHeadMicは、VR空間に仮想のダミーヘッドマイクを置き�
 ## 目的から選ぶ
 
 - [必要な環境を確認する](getting-started/requirements.md)
+- [インストール・更新する](getting-started/install-update.md)
 - [最初の音を出す](getting-started/first-sound.md)
+- [音声経路を選ぶ](audio/routes.md)
+- [DAWでVSTブリッジを使う](audio/vst-bridge.md)
 - [OBSへ音を取り込む](audio/obs.md)
 - [ダミーヘッドを設置する](operation/dummy-head.md)
+- [主な設定項目を調べる](operation/settings.md)
 - [VRChatカメラと同期する](vrchat-camera/overview.md)
 - [問題を解決する](troubleshooting/common-issues.md)
 

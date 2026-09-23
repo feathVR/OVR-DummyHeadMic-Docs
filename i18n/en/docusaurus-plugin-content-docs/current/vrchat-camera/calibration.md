@@ -22,3 +22,5 @@ Calibration measures the relationship between the camera in VRChat and the posit
 ## Recording in portrait orientation
 
 Changing the camera to portrait orientation in VRChat alone does not change the audio orientation. Set **Acoustic Camera Orientation** to “Portrait” as well.
+
+If a prompt is unclear or calibration stops progressing, see the [status guide](status).

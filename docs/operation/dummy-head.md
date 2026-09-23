@@ -4,7 +4,7 @@ import DummyHeadFigure from "@site/src/components/DummyHeadFigure";
 
 ## 手動で移動する
 
-左手X＋右手A、または両手のAボタンを押している間、ダミーヘッドが右手に追従します。置きたい位置まで右手を動かしてからボタンを離します。
+代表的な割り当てでは、左手X＋右手A、または両手Aを押している間、ダミーヘッドが右手に追従します。置きたい位置まで右手を動かしてからボタンを離します。機種ごとの実際の割り当ては[アプリ内の使い方表示](controllers)で確認してください。
 
 <DummyHeadFigure part="place" />
 

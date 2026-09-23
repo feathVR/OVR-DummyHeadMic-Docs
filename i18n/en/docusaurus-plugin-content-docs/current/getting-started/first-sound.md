@@ -4,9 +4,9 @@ For your first check, place the dummy head manually and verify the sound without
 
 1. Start SteamVR.
 2. Start OVR-DummyHeadMic.
-3. Under **Audio device settings**, select the [input and output devices](../audio/devices).
+3. Under **Audio device settings**, select the Normal audio route and choose the [input and output devices](../audio/devices).
 4. Put on your headphones, speak into the microphone, and confirm that you can hear the audio.
-5. Hold left-hand X + right-hand A, or the A buttons on both hands, and move the dummy head with your right hand.
+5. Check your [controller bindings](../operation/controllers). A typical binding is left X + right A, or both A buttons; hold them while moving the dummy head with your right hand.
 6. Move to either side of the dummy head and confirm that the apparent voice position changes.
 7. If you are streaming or recording, configure [audio capture in OBS](../audio/obs).
 

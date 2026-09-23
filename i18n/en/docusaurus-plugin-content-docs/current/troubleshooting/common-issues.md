@@ -2,6 +2,7 @@
 
 ## No audio
 
+- Check whether **Audio route** is Normal or VST bridge. Choose Normal if you are not using a DAW.
 - Check that the input device is the microphone you are using.
 - Check that the output device matches where your headphones are connected.
 - Check mute and volume settings in Windows and the app.
@@ -10,6 +11,7 @@
 
 ## No audio reaches OBS
 
+- These steps are for the Normal route. For VST bridge, check the [DAW route](../audio/vst-bridge).
 - Add **Audio Output Capture**, not “Audio Input Capture,” to OBS.
 - Select the same output device in OVR-DummyHeadMic and OBS.
 - Check that the OBS source and audio mixer are not muted.
@@ -23,6 +25,20 @@ Mute the regular microphone input in OBS. Use only the Audio Output Capture that
 - Check that SteamVR recognizes both controllers.
 - Hold left-hand X + right-hand A, or both A buttons, at the same time.
 - If VRChat camera sync is active, end sync temporarily to return to manual placement.
+- For another controller or custom binding, check the [in-app binding names](../operation/controllers).
+
+## Dropouts or unwanted noise
+
+- In Normal mode, try **Dropout protection (ring buffer)** under Audio device settings. Switching it restarts the audio engine.
+- For steady background noise, try noise reduction. Turn it off if it changes the character of your voice.
+- Check device connections and whether another app is using a device exclusively.
+
+## VST bridge does not connect
+
+- Insert `VOrbit Bridge` in the DAW and rescan plug-ins if needed.
+- Set the DAW sample rate to 44.1 or 48 kHz.
+- If another app is using the bridge, end its bridge mode first.
+- See the [VST bridge status guide](../audio/vst-bridge) for specific messages.
 
 ## VRChat camera is not detected
 
@@ -45,3 +61,5 @@ Mute the regular microphone input in OBS. Use only the Audio Output Capture that
 - Calibrate again after changing or reloading your avatar.
 - For portrait filming, set “Acoustic Camera Orientation” to “Portrait.”
 - Use Local Anchor, not World Anchor or Pin.
+
+If the problem remains, see [how to report it](report).

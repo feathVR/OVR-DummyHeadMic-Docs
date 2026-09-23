@@ -4,7 +4,7 @@ import DummyHeadFigure from "@site/src/components/DummyHeadFigure";
 
 ## Move it manually
 
-While holding left-hand X + right-hand A, or the A buttons on both hands, the dummy head follows your right hand. Move your right hand to the desired position, then release the buttons.
+With typical bindings, the dummy head follows your right hand while you hold left X + right A, or both A buttons. Move it to the desired position, then release the buttons. Check the [in-app binding names](controllers) for your controller.
 
 <DummyHeadFigure part="place" />
 

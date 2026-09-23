@@ -13,3 +13,5 @@ This feature makes the dummy head microphone automatically follow the position o
 The connection is usually detected automatically. You can use other OSC-enabled apps at the same time in environments where OSCQuery is available.
 
 Next, [calibrate the camera](calibration).
+
+See the [status guide](status) for messages such as MOVE, WAIT, and READY after starting sync.

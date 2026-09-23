@@ -6,7 +6,7 @@ _The current English Main settings screen, captured from the application. It inc
 
 ## Toggle spatial audio
 
-Press left-hand Y + right-hand B, or the B buttons on both hands, at the same time to toggle spatial audio processing. The dummy head is white when ON and red when OFF.
+With typical bindings, press left Y + right B, or both B buttons, to toggle spatial audio processing. The dummy head is white when ON and red when OFF. Check the [in-app binding names](controllers) for your controller.
 
 ## Dummy head type
 

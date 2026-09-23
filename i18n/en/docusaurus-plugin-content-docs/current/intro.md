@@ -12,9 +12,13 @@ This guide explains how to configure audio devices, route audio to OBS, place th
 ## Choose what you want to do
 
 - [Check the requirements](getting-started/requirements.md)
+- [Install or update](getting-started/install-update.md)
 - [Play your first sound](getting-started/first-sound.md)
+- [Choose an audio route](audio/routes.md)
+- [Use a DAW with the VST bridge](audio/vst-bridge.md)
 - [Route audio to OBS](audio/obs.md)
 - [Place the dummy head](operation/dummy-head.md)
+- [Look up a setting](operation/settings.md)
 - [Synchronize with the VRChat camera](vrchat-camera/overview.md)
 - [Troubleshoot an issue](troubleshooting/common-issues.md)
 
