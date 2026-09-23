@@ -27,3 +27,12 @@ The plug-in is named “VOrbit Bridge” because that is the bundled plug-in's n
 **Disconnect VST bridge** releases the current DAW connection, leaving the plug-in in bypass. **Reconnect VST bridge** retries a waiting connection.
 
 After updating the app, copy the newly bundled plug-in into the DAW scan directory again and rescan it in the DAW.
+
+## When you do not need to reconnect
+
+- **Switching routes**: switching between Normal and VST bridge keeps the DAW connection. While Normal is selected, the plug-in in the DAW passes audio through; switching back to VST bridge resumes spatialization.
+- **Starting the app**: when the app starts (or when you first choose VST bridge after starting it), it automatically asks a waiting plug-in in the DAW to reconnect.
+
+After you press **Disconnect VST bridge**, the connection does not come back on its own. Press **Reconnect VST bridge** to connect again.
+
+For the latency the app adds and the DAW's latency compensation, see [Latency](routes#latency).
