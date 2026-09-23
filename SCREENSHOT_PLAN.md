@@ -15,6 +15,7 @@
 | --- | --- | --- | --- |
 | `src/components/ObsFlowFigure.jsx` | `audio/obs` | `static/img/figures/{ja,en}/obs-flow.png` | 音声の流れと、OBSのマイク入力による二重取り込みの注意 |
 | `src/components/DummyHeadFigure.jsx` | `operation/dummy-head` | `static/img/figures/{ja,en}/dummy-head.png` | 手で運んで置く流れと、顔の向き（前方／後方）の真上図 |
+| `src/components/CamSyncLimitsFigure.jsx` | `vrchat-camera/limitations` | `static/img/figures/{ja,en}/camsync-limits.png` | 対応するカメラ配置、約2.5mの範囲（真上図）、再較正の要否 |
 
 ## 公開前チェック
 

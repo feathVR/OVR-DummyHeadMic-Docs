@@ -1,3 +1,5 @@
+import CamSyncLimitsFigure from "@site/src/components/CamSyncLimitsFigure";
+
 # Supported configurations and recalibration
 
 ## Supported camera placement
@@ -8,6 +10,8 @@ Only **Local Anchor** is supported. The following features are not supported:
 - Pin 1–3
 - Movement using Holoport or teleport
 
+<CamSyncLimitsFigure part="anchor" />
+
 ## After calibration
 
 - Do not switch the camera between front and rear (selfie and outward-facing). If you do, switch it back or calibrate again.
@@ -15,6 +19,8 @@ Only **Local Anchor** is supported. The following features are not supported:
 - The app reconnects automatically after changing worlds.
 - Calibrate again after changing or reloading your avatar.
 - When you end sync, you can place the dummy head manually again with the A button.
+
+<CamSyncLimitsFigure part="after" />
 
 ## Smooth Movement
 

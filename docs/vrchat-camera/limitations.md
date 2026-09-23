@@ -1,3 +1,5 @@
+import CamSyncLimitsFigure from "@site/src/components/CamSyncLimitsFigure";
+
 # 対応範囲と再較正
 
 ## 対応するカメラ配置
@@ -8,6 +10,8 @@
 - Pin 1～3
 - Holoportまたはテレポートによる移動
 
+<CamSyncLimitsFigure part="anchor" />
+
 ## 較正後の注意
 
 - カメラの前後（自撮り／外向き）を切り替えないでください。切り替えた場合は元へ戻すか、再較正します。
@@ -15,6 +19,8 @@
 - ワールド移動後は自動的に再接続します。
 - アバターを変更またはリロードした場合は再較正してください。
 - 同期を終了すると、Aボタンによる通常の手動設置へ戻ります。
+
+<CamSyncLimitsFigure part="after" />
 
 ## Smooth Movement
 

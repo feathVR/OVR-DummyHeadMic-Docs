@@ -5,7 +5,7 @@
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
-$figures = @('obs-flow', 'dummy-head')
+$figures = @('obs-flow', 'dummy-head', 'camsync-limits')
 $port = 3055
 $base = "http://localhost:$port/OVR-DummyHeadMic-Docs"
 

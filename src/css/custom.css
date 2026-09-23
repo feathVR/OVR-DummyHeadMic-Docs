@@ -131,12 +131,57 @@ html[data-theme='dark'] .gfig,
 .gfig--poster.gfig--dh .gfig__card { padding-top: 26px; }
 .gfig--poster.gfig--dh .gfig__tip { margin-top: 36px; font-size: 22px; }
 
+/* カメラ同期の対応範囲：配置の可否・範囲の真上図・再較正の要否 */
+.gfig { --of-good: #14875a; }
+html[data-theme="dark"] .gfig, .gfig--poster { --of-good: #3ee08f; }
+.gfig__ptitle { font-weight: 700; margin-bottom: 0.6em; }
+.gfig__panel { flex: 1 1 0; min-width: 0; background: var(--of-panel); border: 2px solid var(--of-line); border-radius: 14px; padding: 1rem 1.2rem; }
+.gfig__anchor { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.gfig__chip { display: inline-flex; align-items: center; gap: 0.45em; padding: 0.35em 0.9em; border-radius: 999px; border: 2px solid var(--of-line); background: var(--of-panel); font-weight: 700; }
+.gfig__chip b { font-size: 1.05em; }
+.gfig__chip--ok { border-color: var(--of-good); color: var(--of-good); }
+.gfig__chip--ng { color: var(--of-sub); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--of-ng) 70%, transparent); }
+.gfig__chip--ng b { color: var(--of-ng); text-decoration: none; }
+.gfig__lim-grid { display: flex; gap: 1rem; align-items: stretch; }
+.gfig__lim-grid > .gfig__panel:first-child { flex-grow: 1.15; }
+.gfig__range { display: block; width: 100%; max-width: 26rem; height: auto; margin: 0 auto; }
+.gfig__rg-area { fill: color-mix(in srgb, var(--of-accent) 8%, transparent); stroke: var(--of-accent); stroke-width: 2.5; stroke-dasharray: 7 6; }
+.gfig__rg-radius { stroke: var(--of-accent); stroke-width: 2; }
+.gfig__rg-text { fill: var(--of-accent); font-size: 18px; font-weight: 700; }
+.gfig__rg-sub { fill: var(--of-sub); font-size: 16px; }
+.gfig__rg-back-t { fill: var(--of-good); font-size: 16px; }
+.gfig__rg-avatar { fill: none; stroke: var(--of-sub); stroke-width: 3; stroke-linecap: round; }
+.gfig__rg-cam { fill: var(--of-panel); stroke: var(--of-good); stroke-width: 2.5; stroke-linejoin: round; }
+.gfig__rg-cam--off { stroke: var(--of-sub); stroke-dasharray: 4 3; }
+.gfig__rg-in { fill: var(--of-good); font-size: 17px; font-weight: 700; }
+.gfig__rg-off { fill: var(--of-sub); font-size: 17px; font-weight: 700; }
+.gfig__rg-back { fill: none; stroke: var(--of-good); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.gfig__recal { display: flex; flex-direction: column; gap: 0.8rem; }
+.gfig__recal-col { border-left: 4px solid var(--of-line); padding-left: 0.8rem; }
+.gfig__recal-col--need { border-color: var(--of-ng); }
+.gfig__recal-col--auto { border-color: var(--of-good); }
+.gfig__ctitle { font-weight: 700; margin-bottom: 0.2em; }
+.gfig__recal-col--need .gfig__ctitle { color: var(--of-ng); }
+.gfig__recal-col--auto .gfig__ctitle { color: var(--of-good); }
+.gfig__recal ul { margin: 0; padding-left: 1.1em; }
+.gfig__recal li { margin: 0.2em 0; line-height: 1.45; }
+.gfig__recal small { display: block; color: var(--of-sub); font-size: 0.85em; }
+.gfig--poster.gfig--lim { display: flex; flex-direction: column; }
+.gfig--poster.gfig--lim .gfig__ptitle { font-size: 27px; margin-bottom: 16px; }
+.gfig--poster.gfig--lim .gfig__lim-anchor { margin-top: 30px; display: flex; align-items: center; gap: 24px; }
+.gfig--poster.gfig--lim .gfig__lim-anchor .gfig__ptitle { margin: 0; }
+.gfig--poster.gfig--lim .gfig__lim-grid { flex: 1; margin-top: 28px; gap: 28px; }
+.gfig--poster.gfig--lim .gfig__panel { padding: 22px 28px; }
+.gfig--poster.gfig--lim .gfig__range { max-width: 560px; }
+.gfig--poster.gfig--lim .gfig__recal { gap: 20px; }
+
 /* スマホ：縦に並べて矢印を下向きに */
 @media (max-width: 700px) {
   .gfig:not(.gfig--poster) .gfig__flow { flex-direction: column; }
   .gfig:not(.gfig--poster) .gfig__node { padding: 1.3rem 1rem 1rem; }
   .gfig:not(.gfig--poster) .gfig__arrow { flex-basis: 2.2em; transform: rotate(90deg); }
   .gfig:not(.gfig--poster) .gfig__bottom { flex-direction: column; }
+  .gfig:not(.gfig--poster) .gfig__lim-grid { flex-direction: column; }
 }
 
 /* PNG書き出し用ポスター（src/pages/figures/*）：1600×900固定・常に暗色 */
