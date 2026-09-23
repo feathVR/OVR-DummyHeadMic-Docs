@@ -41,7 +41,7 @@ const config: Config = {
       title: 'OVR-DummyHeadMic',
       logo: {alt: 'OVR-DummyHeadMic', src: 'img/favicon.svg'},
       items: [
-        {to: '/', label: '操作ガイド', position: 'left'},
+        {to: '/intro', label: '操作ガイド', position: 'left'},
         {to: '/vrchat-camera/overview', label: 'VRChatカメラ同期', position: 'left'},
         {to: '/troubleshooting/common-issues', label: '困ったとき', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
@@ -54,7 +54,7 @@ const config: Config = {
         {
           title: 'ガイド',
           items: [
-            {label: 'はじめに', to: '/'},
+            {label: 'はじめに', to: '/intro'},
             {label: '最初の音を出す', to: '/getting-started/first-sound'},
             {label: 'トラブルシューティング', to: '/troubleshooting/common-issues'},
           ],

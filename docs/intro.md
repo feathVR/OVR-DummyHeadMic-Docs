@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /
+slug: /intro
 ---
 
 # OVR-DummyHeadMic 操作ガイド
@@ -11,12 +11,12 @@ OVR-DummyHeadMicは、VR空間に仮想のダミーヘッドマイクを置き�
 
 ## 目的から選ぶ
 
-- [必要な環境を確認する](getting-started/requirements)
-- [最初の音を出す](getting-started/first-sound)
-- [OBSへ音を取り込む](audio/obs)
-- [ダミーヘッドを設置する](operation/dummy-head)
-- [VRChatカメラと同期する](vrchat-camera/overview)
-- [問題を解決する](troubleshooting/common-issues)
+- [必要な環境を確認する](getting-started/requirements.md)
+- [最初の音を出す](getting-started/first-sound.md)
+- [OBSへ音を取り込む](audio/obs.md)
+- [ダミーヘッドを設置する](operation/dummy-head.md)
+- [VRChatカメラと同期する](vrchat-camera/overview.md)
+- [問題を解決する](troubleshooting/common-issues.md)
 
 :::info
 初めて使用する場合は「必要な環境」から順に進めてください。まず手動設置で音を確認し、その後にVRChatカメラ同期を設定すると切り分けが簡単です。

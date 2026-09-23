@@ -201,3 +201,43 @@ html[data-theme="dark"] .gfig, .gfig--poster { --of-good: #3ee08f; }
 .gfig--poster .gfig__bottom { margin-top: 40px; gap: 28px; }
 .gfig--poster .gfig__steps li { margin: 0.25em 0; }
 .gfig--poster .gfig__bottom h2 { font-size: 27px; }
+
+/* ---- トップページ（src/pages/index.jsx） ---- */
+.home__hero {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 4rem 1rem 3.5rem; color: #e9eefc;
+  background: radial-gradient(ellipse at 30% 0%, #1c3a6e 0%, #0b1a38 55%, #081426 100%);
+}
+.home__logo { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 0 36px rgb(39 196 245 / 35%); }
+.home__title { font-size: clamp(2rem, 6vw, 3.4rem); margin: 1.2rem 0 0.4rem; letter-spacing: -0.02em; color: #fff; }
+.home__tagline { font-size: clamp(1rem, 2.6vw, 1.3rem); color: #9fc4e8; margin: 0 0 2rem; }
+.home__buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; }
+.home__btn {
+  display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+  min-width: 11rem; padding: 0.75rem 1.4rem; border-radius: 10px;
+  font-weight: 700; font-size: 1.05rem; line-height: 1.3;
+  border: 2px solid #27c4f5; color: #e9eefc; background: rgb(18 26 51 / 70%);
+  transition: background 0.15s, transform 0.15s;
+}
+.home__btn:hover { color: #fff; text-decoration: none; background: rgb(39 196 245 / 18%); transform: translateY(-1px); }
+.home__btn--primary { background: #27c4f5; color: #06122a; }
+.home__btn--primary:hover { background: #52d2f8; color: #06122a; }
+.home__btn--disabled, .home__btn--disabled:hover {
+  cursor: default; transform: none; opacity: 0.55; border-style: dashed;
+  background: rgb(18 26 51 / 70%); color: #e9eefc;
+}
+.home__btn small { font-weight: 400; font-size: 0.75rem; }
+.home__features {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+  max-width: 68rem; margin: 0 auto; padding: 3.5rem 1.5rem 4rem;
+}
+.home__feature { text-align: center; }
+.home__feature .gfig__icon { width: 5rem; height: 5rem; margin-bottom: 0.6rem; }
+.home__feature h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+.home__feature p { color: var(--of-sub); margin: 0; }
+@media (max-width: 800px) {
+  .home__features { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+@media (max-width: 520px) {
+  .home__buttons { flex-direction: column; align-items: stretch; width: 100%; max-width: 20rem; }
+}

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /
+slug: /intro
 ---
 
 # OVR-DummyHeadMic User Guide
@@ -11,12 +11,12 @@ This guide explains how to configure audio devices, route audio to OBS, place th
 
 ## Choose what you want to do
 
-- [Check the requirements](getting-started/requirements)
-- [Play your first sound](getting-started/first-sound)
-- [Route audio to OBS](audio/obs)
-- [Place the dummy head](operation/dummy-head)
-- [Synchronize with the VRChat camera](vrchat-camera/overview)
-- [Troubleshoot an issue](troubleshooting/common-issues)
+- [Check the requirements](getting-started/requirements.md)
+- [Play your first sound](getting-started/first-sound.md)
+- [Route audio to OBS](audio/obs.md)
+- [Place the dummy head](operation/dummy-head.md)
+- [Synchronize with the VRChat camera](vrchat-camera/overview.md)
+- [Troubleshoot an issue](troubleshooting/common-issues.md)
 
 :::info
 If this is your first time using the app, start with “Requirements” and follow the pages in order. First verify the audio with manual placement, then set up VRChat camera sync. This makes it easier to identify problems.
