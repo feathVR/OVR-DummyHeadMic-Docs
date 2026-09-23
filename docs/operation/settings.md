@@ -14,6 +14,11 @@
 | 右手で固定化される顔の向き | Frontは自分と向き合い、Backは自分と同じ方向を向きます。 |
 | 腕メニュー | 手首アイコンのON/OFFと、表示する手の選択。 |
 | VRChatカメラと同期 | カメラ追従の開始／終了。初回は[較正](../vrchat-camera/calibration)します。 |
+| SteamVR起動時に自動で起動 | ONにすると、次からSteamVRの起動と同時に本アプリも起動します。SteamVRの設定「起動／シャットダウン → 起動時のオーバーレイアプリを選択」と同じ項目で、どちらで変えても一致します。 |
+
+## How to use（使い方）
+
+通常版とVRChat版の手順を表示します。各手順の下にあるボタンから、解説動画と、このマニュアルの該当ページ（通常版は[最初の音を出す](../getting-started/first-sound)、VRChat版は[VRChatカメラ同期](../vrchat-camera/overview)）を開けます。アプリを英語表示にしている場合は、マニュアルの英語版が開きます。
 
 ## Audio device settings
 

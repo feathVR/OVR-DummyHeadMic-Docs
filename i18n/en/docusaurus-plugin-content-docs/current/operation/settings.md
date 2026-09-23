@@ -14,6 +14,11 @@ Open settings pages from the left navigation in the app. Choose an [audio route]
 | Face direction when placed | Front faces you; Back faces the same way you do. |
 | Arm menu | Turns the wrist icon on/off and chooses which hand displays it. |
 | Sync with VRChat camera | Starts or stops camera following. [Calibrate](../vrchat-camera/calibration) first. |
+| Launch automatically with SteamVR | When on, the app starts together with SteamVR from the next time. This is the same setting as SteamVR's **Startup / Shutdown → Choose Startup Overlay Apps**, so either place shows the same state. |
+
+## How to use
+
+Shows the steps for the standard and VRChat workflows. Buttons below each set of steps open the tutorial video and the matching page of this manual ([Play your first sound](../getting-started/first-sound) for standard use, [VRChat camera sync](../vrchat-camera/overview) for VRChat). When the app is in English, the English manual opens.
 
 ## Audio device settings
 
