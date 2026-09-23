@@ -1,6 +1,6 @@
 # Report an unresolved issue
 
-If [common issues](common-issues) do not help, contact the support channel named by your distribution source. Report guide typos or broken links in [this guide's GitHub Issues](https://github.com/feathVR/OVR-DummyHeadMic-Docs/issues).
+If [common issues](common-issues) do not help, ask in the [Discord community](https://discord.gg/5r9Ub76fnz). This is the same Discord community as VOrbit ASMR. Report guide typos or broken links in [this guide's GitHub Issues](https://github.com/feathVR/OVR-DummyHeadMic-Docs/issues).
 
 Include what you can:
 

@@ -1,6 +1,6 @@
 # 解決しない問題を報告する
 
-[よくある問題](common-issues)で解決しない場合は、入手元に記載されたサポート窓口へ連絡してください。マニュアルの誤記やリンク切れは[このガイドのGitHub Issues](https://github.com/feathVR/OVR-DummyHeadMic-Docs/issues)で報告できます。
+[よくある問題](common-issues)で解決しない場合は、[Discordコミュニティ](https://discord.gg/5r9Ub76fnz)で相談できます。このDiscordはVOrbit ASMRと共通です。マニュアルの誤記やリンク切れは[このガイドのGitHub Issues](https://github.com/feathVR/OVR-DummyHeadMic-Docs/issues)で報告できます。
 
 報告には、分かる範囲で次を添えてください。
 
