@@ -14,6 +14,7 @@
 | Component | Page | PNG (ja / en) | Purpose |
 | --- | --- | --- | --- |
 | `src/components/ObsFlowFigure.jsx` | `audio/obs` | `static/img/figures/{ja,en}/obs-flow.png` | 音声の流れと、OBSのマイク入力による二重取り込みの注意 |
+| `src/components/DummyHeadFigure.jsx` | `operation/dummy-head` | `static/img/figures/{ja,en}/dummy-head.png` | 手で運んで置く流れと、顔の向き（前方／後方）の真上図 |
 
 ## 公開前チェック
 

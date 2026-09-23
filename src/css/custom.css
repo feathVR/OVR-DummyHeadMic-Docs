@@ -29,8 +29,8 @@ body { letter-spacing: 0.01em; }
   :root { --ifm-font-size-base: 16px; }
 }
 
-/* ---- 図解：OBSへの取り込み（src/components/ObsFlowFigure.jsx） ---- */
-.obsflow {
+/* ---- 図解の共通スタイル（src/components/*Figure.jsx） ---- */
+.gfig {
   --of-panel: #f4f8fd;
   --of-line: #c9d6ea;
   --of-accent: #007eaa;
@@ -43,8 +43,8 @@ body { letter-spacing: 0.01em; }
   margin: 1.5rem 0 2rem;
   color: var(--of-text);
 }
-html[data-theme='dark'] .obsflow,
-.obsflow--poster {
+html[data-theme='dark'] .gfig,
+.gfig--poster {
   --of-panel: #121a33;
   --of-line: #2a3766;
   --of-accent: #27c4f5;
@@ -54,69 +54,105 @@ html[data-theme='dark'] .obsflow,
   --of-ok: #3ee08f;
   --of-sub: #9fb0d8;
 }
-.obsflow__flow { display: flex; align-items: stretch; }
-.obsflow__node {
+.gfig__flow { display: flex; align-items: stretch; }
+.gfig__node {
   flex: 1 1 0; min-width: 0; position: relative;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   text-align: center; padding: 1.4rem 0.8rem 1.1rem;
   background: var(--of-panel); border: 2px solid var(--of-line); border-radius: 14px;
 }
-.obsflow__node--hl { border-color: var(--of-accent); box-shadow: 0 0 22px color-mix(in srgb, var(--of-accent) 30%, transparent); }
-.obsflow__badge {
+.gfig__node--hl { border-color: var(--of-accent); box-shadow: 0 0 22px color-mix(in srgb, var(--of-accent) 30%, transparent); }
+.gfig__badge {
   position: absolute; top: 0; left: 50%; transform: translate(-50%, -55%);
   background: var(--of-accent); color: var(--of-accent-ink);
   font-weight: 700; font-size: 0.78em; line-height: 1.3; padding: 0.15em 0.8em; border-radius: 999px; white-space: nowrap;
 }
-.obsflow__icon {
+.gfig__icon {
   width: 3.2em; height: 3.2em; margin-bottom: 0.5em;
   fill: none; stroke: var(--of-accent); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round;
 }
-.obsflow__rec { fill: var(--of-ng); stroke: none; }
-.obsflow__name { font-weight: 700; font-size: 1.05em; line-height: 1.3; }
-.obsflow__note { font-size: 0.82em; color: var(--of-sub); margin-top: 0.4em; line-height: 1.5; text-wrap: balance; }
-.obsflow__arrow { flex: 0 0 2.4em; display: flex; align-items: center; justify-content: center; }
-.obsflow__arrow svg { width: 1.8em; height: 1.4em; fill: none; stroke: var(--of-accent); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
-.obsflow__bottom { display: flex; gap: 1.2rem; margin-top: 1.4rem; }
-.obsflow__bottom h2 { font-size: 1.05em; margin: 0 0 0.6em; }
-.obsflow__steps { flex: 1.25; background: var(--of-panel); border: 2px solid var(--of-line); border-radius: 14px; padding: 1.1rem 1.4rem; }
-.obsflow__steps ol { list-style: none; counter-reset: of; margin: 0; padding: 0; }
-.obsflow__steps li { counter-increment: of; display: flex; gap: 0.6em; align-items: baseline; margin: 0.35em 0; line-height: 1.4; }
-.obsflow__steps li::before {
+.gfig__rec { fill: var(--of-ng); stroke: none; }
+.gfig__name { font-weight: 700; font-size: 1.05em; line-height: 1.3; }
+.gfig__note { font-size: 0.82em; color: var(--of-sub); margin-top: 0.4em; line-height: 1.5; text-wrap: balance; }
+.gfig__arrow { flex: 0 0 2.4em; display: flex; align-items: center; justify-content: center; }
+.gfig__arrow svg { width: 1.8em; height: 1.4em; fill: none; stroke: var(--of-accent); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+.gfig__bottom { display: flex; gap: 1.2rem; margin-top: 1.4rem; }
+.gfig__bottom h2 { font-size: 1.05em; margin: 0 0 0.6em; }
+.gfig__steps { flex: 1.25; background: var(--of-panel); border: 2px solid var(--of-line); border-radius: 14px; padding: 1.1rem 1.4rem; }
+.gfig__steps ol { list-style: none; counter-reset: of; margin: 0; padding: 0; }
+.gfig__steps li { counter-increment: of; display: flex; gap: 0.6em; align-items: baseline; margin: 0.35em 0; line-height: 1.4; }
+.gfig__steps li::before {
   content: counter(of); flex: none; width: 1.5em; height: 1.5em; border-radius: 50%;
   background: var(--of-accent); color: var(--of-accent-ink); font-weight: 700; font-size: 0.85em;
   display: flex; align-items: center; justify-content: center; transform: translateY(0.15em);
 }
-.obsflow__steps b { color: var(--of-accent); }
-.obsflow__ok { color: var(--of-ok); font-weight: 700; }
-.obsflow__ng { flex: 1; background: var(--of-ng-bg); border: 2px solid var(--of-ng); border-radius: 14px; padding: 1.1rem 1.4rem; }
-.obsflow__ng h2 { color: var(--of-ng); }
-.obsflow__ng p { margin: 0.7em 0 0; line-height: 1.55; }
-.obsflow__ngrow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7em; font-weight: 700; }
-.obsflow__pill { border: 2px solid var(--of-line); border-radius: 8px; padding: 0.2em 0.7em; background: var(--of-panel); }
-.obsflow__x { color: var(--of-ng); font-size: 1.5em; line-height: 1; }
+.gfig__steps b { color: var(--of-accent); }
+.gfig__ok { color: var(--of-ok); font-weight: 700; }
+.gfig__ng { flex: 1; background: var(--of-ng-bg); border: 2px solid var(--of-ng); border-radius: 14px; padding: 1.1rem 1.4rem; }
+.gfig__ng h2 { color: var(--of-ng); }
+.gfig__ng p { margin: 0.7em 0 0; line-height: 1.55; }
+.gfig__ngrow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7em; font-weight: 700; }
+.gfig__pill { border: 2px solid var(--of-line); border-radius: 8px; padding: 0.2em 0.7em; background: var(--of-panel); }
+.gfig__x { color: var(--of-ng); font-size: 1.5em; line-height: 1; }
+
+/* ダミーヘッド：顔の向き（真上から見た図） */
+.gfig { --of-red: #e5484d; }
+.gfig__fill { fill: var(--of-accent); stroke: none; }
+.gfig__red { fill: var(--of-red); stroke: none; }
+.gfig--narrow { max-width: 30rem; }
+.gfig__facing { display: flex; gap: 1rem; }
+.gfig__card {
+  flex: 1 1 0; min-width: 0; position: relative; display: flex; flex-direction: column; align-items: center;
+  text-align: center; padding: 1.3rem 0.6rem 0.9rem;
+  background: var(--of-panel); border: 2px solid var(--of-line); border-radius: 14px;
+}
+.gfig__topview { width: 100%; max-width: 9rem; height: auto; margin-bottom: 0.3em; }
+.gfig__tv-head { fill: none; stroke: var(--of-accent); stroke-width: 3.5; }
+.gfig__tv-dir { fill: none; stroke: var(--of-red); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+.gfig__tv-gap { stroke: var(--of-line); stroke-width: 3; stroke-dasharray: 3 5; stroke-linecap: round; }
+.gfig__tv-you { fill: none; stroke: var(--of-sub); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+.gfig__tv-visor { fill: none; stroke: var(--of-sub); stroke-width: 7; stroke-linecap: round; }
+.gfig__tv-label { fill: var(--of-sub); font-size: 17px; font-weight: 700; }
+.gfig__legend { font-size: 0.82em; color: var(--of-sub); margin: 0.6em 0 0; }
+.gfig__dot { display: inline-block; width: 0.7em; height: 0.7em; border-radius: 50%; background: var(--of-red); margin-right: 0.35em; vertical-align: -0.05em; }
+.gfig__tip { margin-top: 1.2rem; padding: 0.9rem 1.3rem; border-radius: 14px; background: var(--of-panel); border: 2px solid var(--of-line); line-height: 1.55; }
+.gfig__tip b { color: var(--of-accent); }
+.gfig--poster.gfig--dh { display: flex; flex-direction: column; }
+.gfig--poster.gfig--dh .gfig__dh-grid { flex: 1; display: grid; grid-template-columns: 1.55fr 1fr; gap: 40px; margin-top: 40px; align-items: stretch; }
+.gfig--poster.gfig--dh .gfig__icon { width: 4em; height: 4em; }
+.gfig--poster.gfig--dh .gfig__facing { height: calc(100% - 100px); }
+.gfig--poster.gfig--dh .gfig__flow { margin-top: 0; height: 100%; }
+.gfig--poster.gfig--dh .gfig__node { font-size: 24px; }
+.gfig--poster.gfig--dh .gfig__arrow { flex-basis: 48px; }
+.gfig--poster.gfig--dh .gfig__arrow svg { width: 40px; height: 32px; }
+.gfig--poster.gfig--dh .gfig__dh-side h2 { font-size: 27px; margin: 0 0 22px; }
+.gfig--poster.gfig--dh .gfig__topview { max-width: 180px; }
+.gfig--poster.gfig--dh .gfig__card { justify-content: flex-start; padding-top: 44px; }
+.gfig--poster.gfig--dh .gfig__card { padding-top: 26px; }
+.gfig--poster.gfig--dh .gfig__tip { margin-top: 36px; font-size: 22px; }
 
 /* スマホ：縦に並べて矢印を下向きに */
 @media (max-width: 700px) {
-  .obsflow:not(.obsflow--poster) .obsflow__flow { flex-direction: column; }
-  .obsflow:not(.obsflow--poster) .obsflow__node { padding: 1.3rem 1rem 1rem; }
-  .obsflow:not(.obsflow--poster) .obsflow__arrow { flex-basis: 2.2em; transform: rotate(90deg); }
-  .obsflow:not(.obsflow--poster) .obsflow__bottom { flex-direction: column; }
+  .gfig:not(.gfig--poster) .gfig__flow { flex-direction: column; }
+  .gfig:not(.gfig--poster) .gfig__node { padding: 1.3rem 1rem 1rem; }
+  .gfig:not(.gfig--poster) .gfig__arrow { flex-basis: 2.2em; transform: rotate(90deg); }
+  .gfig:not(.gfig--poster) .gfig__bottom { flex-direction: column; }
 }
 
-/* PNG書き出し用ポスター（src/pages/figures/obs-flow.jsx）：1600×900固定・常に暗色 */
-.obsflow--poster {
+/* PNG書き出し用ポスター（src/pages/figures/*）：1600×900固定・常に暗色 */
+.gfig--poster {
   width: 1600px; height: 900px; margin: 0; padding: 44px 56px; box-sizing: border-box; overflow: hidden;
   font-size: 23px; color: #e9eefc;
   background: radial-gradient(ellipse at 20% 0%, #16224a 0%, #0b1020 60%);
   font-family: "BIZ UDPGothic", "Yu Gothic UI", "Meiryo", "Segoe UI", sans-serif;
 }
-.obsflow--poster .obsflow__head h1 { font-size: 56px; margin: 0; letter-spacing: 0.01em; }
-.obsflow--poster .obsflow__head h1 em { font-style: normal; color: var(--of-accent); }
-.obsflow--poster .obsflow__head p { font-size: 26px; color: var(--of-sub); margin: 8px 0 0; }
-.obsflow--poster .obsflow__flow { margin-top: 40px; height: 300px; }
-.obsflow--poster .obsflow__node { font-size: 26px; }
-.obsflow--poster .obsflow__arrow { flex-basis: 64px; }
-.obsflow--poster .obsflow__arrow svg { width: 52px; height: 40px; }
-.obsflow--poster .obsflow__bottom { margin-top: 40px; gap: 28px; }
-.obsflow--poster .obsflow__steps li { margin: 0.25em 0; }
-.obsflow--poster .obsflow__bottom h2 { font-size: 27px; }
+.gfig--poster .gfig__head h1 { font-size: 56px; margin: 0; letter-spacing: 0.01em; }
+.gfig--poster .gfig__head h1 em { font-style: normal; color: var(--of-accent); }
+.gfig--poster .gfig__head p { font-size: 26px; color: var(--of-sub); margin: 8px 0 0; }
+.gfig--poster .gfig__flow { margin-top: 40px; height: 300px; }
+.gfig--poster .gfig__node { font-size: 26px; }
+.gfig--poster .gfig__arrow { flex-basis: 64px; }
+.gfig--poster .gfig__arrow svg { width: 52px; height: 40px; }
+.gfig--poster .gfig__bottom { margin-top: 40px; gap: 28px; }
+.gfig--poster .gfig__steps li { margin: 0.25em 0; }
+.gfig--poster .gfig__bottom h2 { font-size: 27px; }

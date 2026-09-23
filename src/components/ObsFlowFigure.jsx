@@ -1,5 +1,5 @@
 import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {FlowNodes, useFigureText} from './figure/parts';
 
 // 「OBSへの取り込み」の図解。ページ埋め込み（既定）と、PNG書き出し用のポスター（poster）の2形態。
 // 文言は ja / en をこのファイルで持つ。本文（docs/audio/obs.md と英語版）と食い違わないように直すこと。
@@ -20,7 +20,7 @@ const TEXT = {
       'OBSで対象のシーンを開く',
       <>ソースの「＋」→ <b>音声出力キャプチャ</b> を追加</>,
       <>アプリで設定した<b>出力デバイス</b>を選ぶ</>,
-      <>マイクへ話す → <span className="obsflow__ok">OBSの音量メーターが動けばOK</span></>,
+      <>マイクへ話す → <span className="gfig__ok">OBSの音量メーターが動けばOK</span></>,
       <>OBS側の<b>通常のマイク入力はミュート</b></>,
     ],
     ngTitle: '二重取り込みに注意',
@@ -43,7 +43,7 @@ const TEXT = {
       'Open the scene you want to use in OBS',
       <>Under Sources, select “+” → add <b>Audio Output Capture</b></>,
       <>Select the <b>output device</b> configured in the app</>,
-      <>Speak into the mic → <span className="obsflow__ok">the OBS audio meter moves</span></>,
+      <>Speak into the mic → <span className="gfig__ok">the OBS audio meter moves</span></>,
       <><b>Mute the regular microphone input</b> in OBS</>,
     ],
     ngTitle: 'Avoid capturing your voice twice',
@@ -78,73 +78,42 @@ const ICONS = {
     <>
       <rect x="6" y="12" width="52" height="34" rx="5" />
       <path d="M24 56h16M32 46v10" />
-      <circle cx="21" cy="29" r="5" className="obsflow__rec" />
+      <circle cx="21" cy="29" r="5" className="gfig__rec" />
       <path d="M32 24h16M32 30h12M32 36h14" opacity=".55" />
     </>
   ),
 };
 
-function Icon({name}) {
-  return (
-    <svg className="obsflow__icon" viewBox="0 0 64 64" aria-hidden="true">
-      {ICONS[name]}
-    </svg>
-  );
-}
-
-function Arrow() {
-  return (
-    <div className="obsflow__arrow" aria-hidden="true">
-      <svg viewBox="0 0 52 40">
-        <path d="M2 20H40M28 6l16 14-16 14" />
-      </svg>
-    </div>
-  );
-}
-
 export default function ObsFlowFigure({variant = 'inline'}) {
-  const {i18n} = useDocusaurusContext();
-  const t = TEXT[i18n.currentLocale] ?? TEXT.ja;
+  const t = useFigureText(TEXT);
   const poster = variant === 'poster';
 
   return (
-    <figure className={`obsflow${poster ? ' obsflow--poster' : ''}`} aria-label={t.label}>
+    <figure className={`gfig${poster ? ' gfig--poster' : ''}`} aria-label={t.label}>
       {poster && (
-        <header className="obsflow__head">
+        <header className="gfig__head">
           <h1>{t.title}</h1>
           <p>{t.lead}</p>
         </header>
       )}
 
-      <div className="obsflow__flow">
-        {t.nodes.map((n, i) => (
-          <React.Fragment key={i}>
-            {i > 0 && <Arrow />}
-            <div className={`obsflow__node${n.badge ? ' obsflow__node--hl' : ''}`}>
-              {n.badge && <span className="obsflow__badge">{n.badge}</span>}
-              <Icon name={n.icon} />
-              <div className="obsflow__name">{n.name}</div>
-              <div className="obsflow__note">{n.note}</div>
-            </div>
-          </React.Fragment>
-        ))}
-      </div>
+      <FlowNodes nodes={t.nodes} icons={ICONS} />
 
       {/* ページ内では直後の danger 注記が二重取り込みを説明するので、下段はポスターだけに出す */}
       {poster && (
-        <div className="obsflow__bottom">
-          <div className="obsflow__steps">
+        <div className="gfig__bottom">
+          <div className="gfig__steps">
             <h2>{t.stepsTitle}</h2>
             <ol>
               {t.steps.map((s, i) => <li key={i}><span>{s}</span></li>)}
             </ol>
           </div>
-          <div className="obsflow__ng">
+          <div className="gfig__ng">
             <h2>⚠ {t.ngTitle}</h2>
-            <div className="obsflow__ngrow">
-              <span className="obsflow__pill">{t.ngFrom}</span>
-              <span className="obsflow__x" aria-hidden="true">✕</span>
-              <span className="obsflow__pill">{t.ngTo}</span>
+            <div className="gfig__ngrow">
+              <span className="gfig__pill">{t.ngFrom}</span>
+              <span className="gfig__x" aria-hidden="true">✕</span>
+              <span className="gfig__pill">{t.ngTo}</span>
             </div>
             <p>{t.ngBody}</p>
           </div>

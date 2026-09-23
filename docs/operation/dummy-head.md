@@ -1,8 +1,12 @@
+import DummyHeadFigure from "@site/src/components/DummyHeadFigure";
+
 # ダミーヘッドの設置
 
 ## 手動で移動する
 
 左手X＋右手A、または両手のAボタンを押している間、ダミーヘッドが右手に追従します。置きたい位置まで右手を動かしてからボタンを離します。
+
+<DummyHeadFigure part="place" />
 
 ## 顔の向き
 
@@ -10,6 +14,8 @@
 
 - **前方（Front）**：ダミーヘッドが自分と向き合う配置
 - **後方（Back）**：ダミーヘッドが自分と同じ方向を向く配置
+
+<DummyHeadFigure part="facing" />
 
 ## 透明度
 
