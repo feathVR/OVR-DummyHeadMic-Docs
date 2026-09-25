@@ -11,6 +11,6 @@ Include what you can:
 - Steps to reproduce, expected result, and actual result
 - A screenshot with personal information hidden, if useful
 
-If support asks for a log, check Unity's `Player.log`. On a typical Windows installation it is at `%USERPROFILE%\AppData\LocalLow\feath\OVR_DummyHeadMic\Player.log`. It may contain device names or other local environment details, so review it before attaching it to a public Issue.
+If support asks for a log, check Unity's `Player.log`. On a typical Windows installation it is at `%USERPROFILE%\AppData\LocalLow\feath\OVR-DummyHeadMic\Player.log`. It may contain device names or other local environment details, so review it before attaching it to a public Issue.
 
 The same folder also contains `support-info.txt`, which the app writes automatically. It summarizes the app version, audio route, selected input and output devices, sample rates, and the status of VST bridge and VRChat sync on one page, so including it helps narrow down the cause quickly. The file is only created on your PC and is never sent automatically. It contains device and DAW names, so review it before sharing.
