@@ -3,10 +3,10 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 // 図解コンポーネント（src/components/*Figure.jsx）の共通部品。見た目は custom.css の .gfig* が持つ。
 
-// { ja: {...}, en: {...} } から今のロケールの文言を選ぶ（未知のロケールは ja）
+// 現在ロケールの文言を選ぶ。未翻訳ロケールは、海外ユーザーが読める英語へフォールバックする。
 export function useFigureText(text) {
   const {i18n} = useDocusaurusContext();
-  return text[i18n.currentLocale] ?? text.ja;
+  return text[i18n.currentLocale] ?? text.en ?? text.ja;
 }
 
 export function Arrow() {

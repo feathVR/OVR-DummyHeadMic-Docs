@@ -1,0 +1,26 @@
+{
+  "sidebar.docs.category.はじめに": {
+    "message": "開始使用",
+    "description": "The label for category 'はじめに' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.音声設定": {
+    "message": "音訊設定",
+    "description": "The label for category '音声設定' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.基本操作": {
+    "message": "基本操作",
+    "description": "The label for category '基本操作' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.VRChatカメラ同期": {
+    "message": "VRChat 攝影機同步",
+    "description": "The label for category 'VRChatカメラ同期' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.困ったとき": {
+    "message": "疑難排解",
+    "description": "The label for category '困ったとき' in sidebar 'docs'"
+  },
+  "version.label": {
+    "message": "下一頁",
+    "description": "The label for version current"
+  }
+}

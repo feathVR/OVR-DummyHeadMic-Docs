@@ -1,12 +1,8 @@
 import type {Config} from '@docusaurus/types';
 
 const config: Config = {
-  title: process.env.DOCUSAURUS_CURRENT_LOCALE === 'en'
-    ? 'OVR-DummyHeadMic User Guide'
-    : 'OVR-DummyHeadMic 操作ガイド',
-  tagline: process.env.DOCUSAURUS_CURRENT_LOCALE === 'en'
-    ? 'Binaural audio for VR streaming and recording'
-    : 'VR配信・収録のためのバイノーラル音響ガイド',
+  title: 'OVR-DummyHeadMic User Guide',
+  tagline: 'Binaural audio for VR streaming and recording',
   favicon: 'img/favicon.svg',
   url: 'https://feathvr.github.io',
   baseUrl: '/OVR-DummyHeadMic-Docs/',
@@ -15,10 +11,16 @@ const config: Config = {
   onBrokenLinks: 'throw',
   i18n: {
     defaultLocale: 'ja',
-    locales: ['ja', 'en'],
+    locales: ['ja', 'en', 'zh-Hans', 'zh-Hant', 'ko', 'ru', 'es', 'pt-BR'],
     localeConfigs: {
       ja: {label: '日本語', htmlLang: 'ja-JP'},
       en: {label: 'English', htmlLang: 'en-US'},
+      'zh-Hans': {label: '简体中文', htmlLang: 'zh-CN'},
+      'zh-Hant': {label: '繁體中文', htmlLang: 'zh-TW'},
+      ko: {label: '한국어', htmlLang: 'ko-KR'},
+      ru: {label: 'Русский', htmlLang: 'ru-RU'},
+      es: {label: 'Español', htmlLang: 'es'},
+      'pt-BR': {label: 'Português (Brasil)', htmlLang: 'pt-BR'},
     },
   },
   presets: [
