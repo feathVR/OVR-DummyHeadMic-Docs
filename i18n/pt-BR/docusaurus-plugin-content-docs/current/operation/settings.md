@@ -22,7 +22,7 @@ Mostra as etapas dos fluxos de trabalho padrão e do VRChat. Os botões abaixo d
 
 ## Idioma
 
-Escolha o idioma da interface com **Idioma** na janela de configurações. Há 8 idiomas disponíveis: 日本語, English, 简体中文, 繁體中文, 한국어, Русский, Español e Português (Brasil). Toda a interface muda imediatamente, sem reiniciar, e os botões do manual em Como usar abrem o manual no idioma escolhido. Na primeira inicialização, o aplicativo usa o idioma de exibição do Windows se for um destes e se a fonte estiver disponível no PC; caso contrário, usa inglês. Os nomes das páginas do menu lateral (como Main settings) permanecem em inglês em todos os idiomas.
+Escolha o idioma da interface com **Language / Idioma** na janela de configurações. Há 8 idiomas disponíveis: 日本語, English, 简体中文, 繁體中文, 한국어, Русский, Español e Português (Brasil). Toda a interface muda imediatamente, sem reiniciar, e os botões do manual em Como usar abrem o manual no idioma escolhido. Na primeira inicialização, o aplicativo usa o idioma de exibição do Windows se for um destes e se a fonte estiver disponível no PC; caso contrário, usa inglês. Os nomes das páginas do menu lateral (como Main settings) permanecem em inglês em todos os idiomas.
 
 ## Configurações do dispositivo de áudio
 
