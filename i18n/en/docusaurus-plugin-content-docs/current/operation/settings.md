@@ -20,6 +20,10 @@ Open settings pages from the left navigation in the app. Choose an [audio route]
 
 Shows the steps for the standard and VRChat workflows. Buttons below each set of steps open the tutorial video and the matching page of this manual ([Play your first sound](../getting-started/first-sound) for standard use, [VRChat camera sync](../vrchat-camera/overview) for VRChat). When the app is in English, the English manual opens.
 
+## Language
+
+Choose the display language with **Language** in the settings window. Eight languages are available: 日本語, English, 简体中文, 繁體中文, 한국어, Русский, Español and Português (Brasil). The whole interface switches immediately, with no restart, and the manual buttons under How to use open the manual in the selected language. On first launch the app uses the Windows display language if it is one of these and its font is available on the PC, otherwise English. The page names in the side menu, such as Main settings, stay in English in every language.
+
 ## Audio device settings
 
 **Audio route** selects Normal or VST bridge. Normal uses microphone and output-device selections and has dropout protection. VST bridge uses the DAW's audio settings. Noise reduction is available in either route. See [Choose an audio route](../audio/routes).
