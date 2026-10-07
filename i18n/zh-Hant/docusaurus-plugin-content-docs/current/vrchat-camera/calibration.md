@@ -10,7 +10,7 @@
 6. 綠色圓圈開始繪製時，請停止移動，並用同一隻手握住攝影機保持不動。
 7. 出現「校正完成」後，將攝影機移至拍攝位置並放置。
 
-![VRChat 攝影機同步的初始設定](/img/screenshots/en/vrchat-camera-sync.png)
+![VRChat 攝影機同步的初始設定](/img/screenshots/zh-Hant/vrchat-camera-sync.png)
 
 :::warning 校正期間的重要事項
 - 校正完成前請勿換手。

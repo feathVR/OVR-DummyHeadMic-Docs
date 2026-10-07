@@ -10,7 +10,7 @@ Para a primeira verificação, posicione a cabeça binaural manualmente e confir
 6. Vá para um dos lados da cabeça binaural e confirme que a posição aparente da voz muda.
 7. Se você estiver transmitindo ou gravando, configure a [captura de áudio no OBS](../audio/obs).
 
-![Configuração e operação básicas do OVR-DummyHeadMic](/img/screenshots/en/basic-guide.png)
+![Configuração e operação básicas do OVR-DummyHeadMic](/img/screenshots/pt-BR/basic-guide.png)
 
 _Visão geral da entrada e saída, captura no OBS, movimentação da posição e ativação do áudio espacial._
 

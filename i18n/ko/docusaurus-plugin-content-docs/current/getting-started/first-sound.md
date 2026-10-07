@@ -10,7 +10,7 @@
 6. 더미 헤드의 양옆으로 이동하여 음성이 들리는 위치가 달라지는지 확인합니다.
 7. 스트리밍이나 녹화를 한다면 [OBS 오디오 캡처](../audio/obs)를 설정합니다.
 
-![OVR-DummyHeadMic 기본 설정 및 조작](/img/screenshots/en/basic-guide.png)
+![OVR-DummyHeadMic 기본 설정 및 조작](/img/screenshots/ko/basic-guide.png)
 
 _입출력, OBS 캡처, 위치 이동 및 공간 음향 전환에 대한 개요입니다._
 

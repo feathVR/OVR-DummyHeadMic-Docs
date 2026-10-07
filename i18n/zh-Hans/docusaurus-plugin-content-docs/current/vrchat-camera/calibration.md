@@ -10,7 +10,7 @@
 6. 绿色圆圈开始绘制时，停止移动，并继续用同一只手握住摄像机保持静止。
 7. 出现“校准完成”后，将摄像机移动到拍摄位置并放在那里。
 
-![VRChat 摄像机同步的初始设置](/img/screenshots/en/vrchat-camera-sync.png)
+![VRChat 摄像机同步的初始设置](/img/screenshots/zh-Hans/vrchat-camera-sync.png)
 
 :::warning 校准期间的重要注意事项
 - 校准完成前不要换手。

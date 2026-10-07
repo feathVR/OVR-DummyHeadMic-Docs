@@ -10,7 +10,7 @@
 6. 移动到假人头任意一侧，确认听起来的声源位置会发生变化。
 7. 如果要直播或录音，请配置 [OBS 音频采集](../audio/obs)。
 
-![OVR-DummyHeadMic 的基本设置和操作](/img/screenshots/en/basic-guide.png)
+![OVR-DummyHeadMic 的基本设置和操作](/img/screenshots/zh-Hans/basic-guide.png)
 
 _输入与输出、OBS 采集、移动位置以及切换空间音频的概览。_
 

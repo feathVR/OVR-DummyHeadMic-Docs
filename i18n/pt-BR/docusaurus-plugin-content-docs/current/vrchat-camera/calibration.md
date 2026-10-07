@@ -10,7 +10,7 @@ A calibração mede a relação entre a câmera no VRChat e a posição do seu c
 6. Quando o círculo verde começar a ser desenhado, pare de se mover e permaneça imóvel, segurando a câmera com a mesma mão.
 7. Quando “Calibração concluída” aparecer, mova a câmera para a posição de filmagem e coloque-a ali.
 
-![Configuração inicial da sincronização da câmera do VRChat](/img/screenshots/en/vrchat-camera-sync.png)
+![Configuração inicial da sincronização da câmera do VRChat](/img/screenshots/pt-BR/vrchat-camera-sync.png)
 
 :::warning Importante durante a calibração
 - Não troque de mão antes de concluir a calibração.

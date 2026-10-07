@@ -10,7 +10,7 @@
 6. 移到假人頭任一側，確認聽起來的語音位置會改變。
 7. 若要直播或錄影，請設定 [OBS 音訊擷取](../audio/obs)。
 
-![OVR-DummyHeadMic 的基本設定與操作](/img/screenshots/en/basic-guide.png)
+![OVR-DummyHeadMic 的基本設定與操作](/img/screenshots/zh-Hant/basic-guide.png)
 
 _輸入與輸出、OBS 擷取、移動位置及切換空間音訊的概覽。_
 

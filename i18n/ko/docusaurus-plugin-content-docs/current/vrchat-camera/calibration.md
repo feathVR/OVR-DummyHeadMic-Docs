@@ -10,7 +10,7 @@
 6. 녹색 원이 그려지기 시작하면 움직임을 멈추고 같은 손으로 카메라를 잡은 채 가만히 있습니다.
 7. "보정 완료"가 나타나면 카메라를 촬영 위치로 옮겨 놓습니다.
 
-![초기 VRChat 카메라 동기화 설정](/img/screenshots/en/vrchat-camera-sync.png)
+![초기 VRChat 카메라 동기화 설정](/img/screenshots/ko/vrchat-camera-sync.png)
 
 :::warning 보정 중 중요 사항
 - 보정이 완료되기 전에 손을 바꾸지 마세요.
