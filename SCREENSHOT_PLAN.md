@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | `static/img/screenshots/<locale>/basic-guide.png`（8言語: ja, en, zh-Hans, zh-Hant, ko, ru, es, pt-BR） | `getting-started/first-sound` | 初回設定、OBS、基本操作の全体像 | 2026-11-18 に③④を新操作（グリップで掴む／頭の下のボタン列）へ描き直し。ja・en を作成し、他の6言語は en から文字を置き換えて作成。全言語の文字を目視確認済み。アプリ内（`Assets/Texture/ManualGuides/basic-guide-<locale>.png`）と同じファイル |
 | `static/img/screenshots/<locale>/vrchat-camera-sync.png`（8言語） | `vrchat-camera/calibration` | VRChatカメラ同期の初回手順 | 2026-10 に8言語を用意。2026-11 の操作変更の影響なし（Codex 点検 2026-11-18） |
-| `static/img/screenshots/en/app-window-en.png` | `operation/sound` | 英語 Main settings の実画面 | **要撮り直し**：v1.10（2026-09-23）の画面で、廃止した「ASMR (toggle with both B buttons)」「Dummy head follows right hand (both A buttons)」が写っている。現行ビルドの実アプリで撮り直す |
+| `static/img/screenshots/en/app-window-en.png` | `operation/sound` | 英語 Main settings の実画面 | 2026-11-18 に撮り直し（エディタの Play モードで実際に起動し、デスクトップ窓のカメラを 2048×1152 で描画して 1280×688 に縮小。窓枠は無し）。掴み操作変更（fef5b87）以降の画面 |
 
 ## 図解（コードで描く図）
 
