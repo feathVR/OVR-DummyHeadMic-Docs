@@ -1,6 +1,6 @@
 # Dispositivos de entrada e saída
 
-Na rota de áudio Normal, em **Configurações do dispositivo de áudio**, selecione o dispositivo de entrada que recebe sua voz e o dispositivo de saída que transmite o áudio processado. Para uma DAW, siga as instruções da [ponte VST](vst-bridge).
+Na rota de áudio Normal, em **Audio device settings**, selecione o dispositivo de entrada que recebe sua voz e o dispositivo de saída que transmite o áudio processado. Para uma DAW, siga as instruções da [ponte VST](vst-bridge).
 
 ## Dispositivo de entrada
 

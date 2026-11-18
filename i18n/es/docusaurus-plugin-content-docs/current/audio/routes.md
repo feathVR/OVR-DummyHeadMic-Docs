@@ -1,6 +1,6 @@
 # Elegir una ruta de audio
 
-En **Configuración del dispositivo de audio → Ruta de audio**, elige **Normal** o **Puente VST**. Tu elección se restaurará la próxima vez que inicies la aplicación.
+En **Audio device settings → Ruta de audio**, elige **Normal** o **Puente VST**. Tu elección se restaurará la próxima vez que inicies la aplicación.
 
 | Ruta | Trayecto del audio | Ideal para |
 | --- | --- | --- |

@@ -6,7 +6,7 @@ _A tela atual das Configurações principais em inglês, capturada no aplicativo
 
 ## Ativar ou desativar o áudio espacial
 
-Aponte o raio para a cabeça binaural para exibir uma fileira de botões abaixo dela. Aponte para o botão de áudio espacial na extremidade esquerda e puxe o gatilho para ativar ou desativar o processamento de áudio espacial. Também é possível usar o botão **ASMR** em **Configurações principais**. A cabeça binaural fica branca quando está ATIVADO e vermelha quando está DESATIVADO. Veja [os controles](controllers) para saber como usar a fileira de botões.
+Aponte o raio para a cabeça binaural para exibir uma fileira de botões abaixo dela. Aponte para o botão de áudio espacial na extremidade esquerda e puxe o gatilho para ativar ou desativar o processamento de áudio espacial. Também é possível usar o botão **ASMR** em **Main settings**. A cabeça binaural fica branca quando está ATIVADO e vermelha quando está DESATIVADO. Veja [os controles](controllers) para saber como usar a fileira de botões.
 
 ## Tipo de cabeça binaural
 

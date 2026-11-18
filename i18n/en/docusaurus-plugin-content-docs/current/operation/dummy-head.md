@@ -7,7 +7,7 @@ import DummyHeadFigure from "@site/src/components/DummyHeadFigure";
 Grab the dummy head with the controller grip to move it. Either hand works. When you let go, it stays where it is.
 
 - **Grab up close**: Bring your hand to the head and squeeze the grip when a light-blue outline appears around it. You can rotate it freely, just like an object in your hand.
-- **Point and grab**: Point the beam at the head and squeeze the grip. It keeps facing you as it moves; push the stick up to move it farther away, down to bring it closer, and left or right to shift it sideways.
+- **Point and grab**: Point the beam at the head and squeeze the grip. It keeps the face direction you set as it moves; push the stick up to move it farther away, down to bring it closer, and left or right to shift it sideways.
 
 Check the [in-app binding names](controllers) for your controller.
 

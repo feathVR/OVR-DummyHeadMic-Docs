@@ -4,7 +4,7 @@ Para a primeira verificação, posicione a cabeça binaural manualmente e confir
 
 1. Inicie o SteamVR.
 2. Inicie o OVR-DummyHeadMic. Ele é iniciado sem exibir uma janela e fica na bandeja do sistema do Windows (a área de notificação no canto inferior direito da tela). Clique no ícone da bandeja para abrir a janela de configurações.
-3. Em **Configurações do dispositivo de áudio**, selecione a rota de áudio Normal e escolha os [dispositivos de entrada e saída](../audio/devices).
+3. Em **Audio device settings**, selecione a rota de áudio Normal e escolha os [dispositivos de entrada e saída](../audio/devices).
 4. Coloque os fones de ouvido, fale ao microfone e confirme que você consegue ouvir o áudio.
 5. Aproxime a mão da cabeça binaural, aperte o grip quando aparecer um contorno azul-claro e mova-a. Você também pode apontar o raio para a cabeça e apertar o grip. Veja [Posicionar a cabeça binaural](../operation/dummy-head) para mais detalhes.
 6. Vá para um dos lados da cabeça binaural e confirme que a posição aparente da voz muda.

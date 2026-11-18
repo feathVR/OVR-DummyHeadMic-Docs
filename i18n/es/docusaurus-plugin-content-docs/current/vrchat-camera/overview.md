@@ -12,7 +12,7 @@ Esta función es inestable. Incluso después de una calibración completa, la po
 2. Abre **Options → OSC**.
 3. Habilita OSC.
 4. Muestra la User Camera de VRChat.
-5. Abre **Configuración principal** en OVR-DummyHeadMic.
+5. Abre **Main settings** en OVR-DummyHeadMic.
 
 Por lo general, la conexión se detecta automáticamente. Puedes usar otras aplicaciones compatibles con OSC al mismo tiempo en entornos donde OSCQuery esté disponible.
 

@@ -7,7 +7,7 @@ import DummyHeadFigure from "@site/src/components/DummyHeadFigure";
 Pegue a cabeça binaural com o grip do controle para movê-la. Qualquer uma das mãos funciona. Ao soltar, ela fica fixa nesse lugar.
 
 - **Pegar de perto**: aproxime a mão da cabeça e aperte o grip quando aparecer um contorno azul-claro ao redor dela. Você pode girá-la livremente, como um objeto na mão.
-- **Apontar e pegar**: aponte o raio para a cabeça e aperte o grip. Ela se move sempre voltada para você; empurre o analógico para cima para afastá-la, para baixo para aproximá-la e para os lados para deslocá-la lateralmente.
+- **Apontar e pegar**: aponte o raio para a cabeça e aperte o grip. Ela se move mantendo a direção do rosto definida; empurre o analógico para cima para afastá-la, para baixo para aproximá-la e para os lados para deslocá-la lateralmente.
 
 Confira no aplicativo os [nomes das associações](controllers) do seu controle.
 
@@ -19,7 +19,7 @@ Ao pressionar **Fixar posição** na fileira de botões que aparece quando você
 
 ## Direção do rosto
 
-Altere com **Inverter orientação** na fileira de botões ou em **Configurações principais**, em “Orientação da cabeça ao posicioná-la com a mão direita”.
+Altere com **Inverter orientação** na fileira de botões ou em **Main settings**, em “Orientação da cabeça ao posicioná-la com a mão direita”.
 
 - **Frente**: a cabeça binaural fica voltada para você (padrão).
 - **Trás**: a cabeça binaural fica voltada para a mesma direção que você.
@@ -30,4 +30,4 @@ Essa direção é mantida também enquanto você a move apontando com o raio.
 
 ## Opacidade
 
-Pressione **Transparência** na fileira de botões para alternar entre quatro níveis: 100→60→30→10%. Em **Configurações principais**, “Transparência da cabeça” permite um ajuste fino, inclusive deixá-la totalmente transparente. Se ela ficar totalmente transparente, poderá ser difícil localizá-la; por isso, recomendamos deixá-la um pouco visível durante o posicionamento.
+Pressione **Transparência** na fileira de botões para alternar entre quatro níveis: 100→60→30→10%. Em **Main settings**, “Transparência da cabeça” permite um ajuste fino, inclusive deixá-la totalmente transparente. Se ela ficar totalmente transparente, poderá ser difícil localizá-la; por isso, recomendamos deixá-la um pouco visível durante o posicionamento.

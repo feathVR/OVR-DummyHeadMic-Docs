@@ -9,7 +9,7 @@ Obtén OVR-DummyHeadMic de su fuente de distribución. La instalación depende d
 3. Inicia SteamVR, luego `OVR-DummyHeadMic.exe` y sigue [Reproducir el primer sonido](first-sound).
 
 :::tip
-Para iniciar la aplicación con SteamVR cada vez, activa **Iniciar automáticamente con SteamVR** en **Configuración principal** (consulta la [referencia de Configuración principal](../operation/settings)). Si mueves la carpeta, inicia una vez `OVR-DummyHeadMic.exe` desde la nueva ubicación.
+Para iniciar la aplicación con SteamVR cada vez, activa **Iniciar automáticamente con SteamVR** en **Main settings** (consulta la [referencia de Configuración principal](../operation/settings)). Si mueves la carpeta, inicia una vez `OVR-DummyHeadMic.exe` desde la nueva ubicación.
 :::
 
 Para actualizar, obtén un paquete completo nuevo de la fuente de distribución. Extraer el paquete completo en una carpeta nueva evita mezclar archivos incluidos antiguos y nuevos. Los ajustes se guardan en la aplicación, pero comprueba la ruta de audio, los dispositivos y la sincronización con VRChat después de actualizar.

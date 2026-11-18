@@ -4,7 +4,7 @@ VST bridge 會將 DAW 的音訊透過 `VOrbit Bridge.vst3` 傳送至本應用程
 
 ## 首次設定
 
-1. 在本應用程式的**音訊裝置設定**中，按一下**開啟 VST bridge 資料夾**。
+1. 在本應用程式的**Audio device settings**中，按一下**開啟 VST bridge 資料夾**。
 2. 將整個 `VOrbit Bridge.vst3` 資料夾複製到 VST3 掃描目錄。每位使用者的位置為 `%LOCALAPPDATA%\Programs\Common\VST3`；所有使用者的位置為 `%COMMONPROGRAMFILES%\VST3`。若您的 DAW 設定了不同的掃描位置，請使用該位置。
 3. 在 DAW 中重新掃描外掛程式，並將 **VOrbit Bridge** 插入要處理的音軌。若將它插入麥克風音軌，請在 DAW 中啟用輸入監聽。
 4. 將 DAW 取樣率設為 **44.1 kHz 或 48 kHz**。

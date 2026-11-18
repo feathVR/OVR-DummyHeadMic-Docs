@@ -1,6 +1,6 @@
 # Escolher uma rota de áudio
 
-Em **Configurações do dispositivo de áudio → Rota de áudio**, escolha **Normal** ou **Ponte VST**. Sua escolha será restaurada na próxima inicialização.
+Em **Audio device settings → Rota de áudio**, escolha **Normal** ou **Ponte VST**. Sua escolha será restaurada na próxima inicialização.
 
 | Rota | Caminho do áudio | Mais indicada para |
 | --- | --- | --- |

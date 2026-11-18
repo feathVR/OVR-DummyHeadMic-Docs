@@ -4,7 +4,7 @@ VST 브리지는 DAW의 오디오를 `VOrbit Bridge.vst3`를 통해 이 앱으�
 
 ## 최초 설정
 
-1. 이 앱의 **오디오 장치 설정**에서 **VST 브리지 폴더 열기**를 클릭합니다.
+1. 이 앱의 **Audio device settings**에서 **VST 브리지 폴더 열기**를 클릭합니다.
 2. `VOrbit Bridge.vst3` 폴더 전체를 VST3 검색 디렉터리에 복사합니다. 사용자별 위치는 `%LOCALAPPDATA%\Programs\Common\VST3`, 모든 사용자용 위치는 `%COMMONPROGRAMFILES%\VST3`입니다. DAW에 다른 검색 위치가 설정되어 있다면 해당 위치를 사용하세요.
 3. DAW에서 플러그인을 다시 검색하고 처리할 오디오 트랙에 **VOrbit Bridge**를 삽입합니다. 마이크 트랙에 삽입한 경우 DAW에서 입력 모니터링을 활성화하세요.
 4. DAW 샘플 레이트를 **44.1 kHz 또는 48 kHz**로 설정합니다.

@@ -9,7 +9,7 @@
 3. 啟動 SteamVR，接著啟動 `OVR-DummyHeadMic.exe`，然後依照[播放第一個聲音](first-sound)操作。
 
 :::tip
-若要讓應用程式每次都隨 SteamVR 啟動，請在**主要設定**中開啟**隨 SteamVR 自動啟動**（請參閱[主要設定參考](../operation/settings)）。若移動資料夾，請從新位置啟動一次 `OVR-DummyHeadMic.exe`。
+若要讓應用程式每次都隨 SteamVR 啟動，請在**Main settings**中開啟**隨 SteamVR 自動啟動**（請參閱[主要設定參考](../operation/settings)）。若移動資料夾，請從新位置啟動一次 `OVR-DummyHeadMic.exe`。
 :::
 
 若要更新，請從發行來源取得新的完整套件。將完整套件解壓縮至新資料夾，可避免新舊隨附檔案混在一起。設定會儲存在應用程式中，但更新後仍請確認音訊路徑、裝置與 VRChat 同步。

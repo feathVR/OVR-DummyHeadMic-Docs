@@ -2,7 +2,7 @@
 
 从应用左侧导航打开设置页面。请先选择[音频路由](../audio/routes)，然后只调整所需的设置。
 
-## 主设置
+## Main settings
 
 | 设置 | 作用 |
 | --- | --- |
@@ -16,7 +16,7 @@
 | 与 VRChat 摄像机同步 | 开始或停止摄像机跟随。请先进行[校准](../vrchat-camera/calibration)。 |
 | 随 SteamVR 自动启动 | 开启后，应用从下次起会与 SteamVR 一同启动。此设置与 SteamVR 的 **启动/关闭 → 选择启动叠加层应用** 相同，因此两处会显示相同状态。 |
 
-## 使用方法
+## How to use
 
 显示标准流程和 VRChat 流程的步骤。每组步骤下方的按钮会打开教程视频和本手册中相应的页面（标准用法对应[播放第一个声音](../getting-started/first-sound)，VRChat 对应 [VRChat 摄像机同步](../vrchat-camera/overview)）。应用使用英语时会打开英文手册。
 
@@ -24,7 +24,7 @@
 
 使用设置窗口中的 **Language / 语言** 选择显示语言，共支持 8 种：日本語、English、简体中文、繁體中文、한국어、Русский、Español、Português (Brasil)。整个界面会立即切换，无需重启；“使用方法”下方的手册按钮会打开所选语言的手册。首次启动时，如果 Windows 的显示语言属于这 8 种之一，且电脑上有对应字体，应用会使用该语言，否则使用英语。侧边菜单中的页面名称（如 Main settings）在所有语言下都保持英文。
 
-## 音频设备设置
+## Audio device settings
 
 **音频路由** 可选择 Normal 或 VST bridge。Normal 使用麦克风和输出设备选择，并提供防止音频丢失功能。VST bridge 使用 DAW 的音频设置。两种路由都可以使用降噪功能。请参阅[选择音频路由](../audio/routes)。
 

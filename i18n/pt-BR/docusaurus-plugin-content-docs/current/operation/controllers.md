@@ -1,6 +1,6 @@
 # Verificar as associações dos controles
 
-Os nomes dos botões de VR dependem das associações dos seus controles no SteamVR. A página **Como usar** deste aplicativo mostra os nomes das associações que consegue ler na etapa 3 (pegar a cabeça binaural). Consulte primeiro essa tela.
+Os nomes dos botões de VR dependem das associações dos seus controles no SteamVR. A página **How to use** deste aplicativo mostra os nomes das associações que consegue ler na etapa 3 (pegar a cabeça binaural). Consulte primeiro essa tela.
 
 As ações comuns são as seguintes. As duas mãos funcionam da mesma forma.
 
@@ -22,4 +22,4 @@ A fileira de botões contém, da esquerda para a direita:
 
 Outros controles podem usar nomes de botões diferentes. Se a tela do aplicativo não corresponder ao seu controle, verifique a associação de controles deste aplicativo no SteamVR. Quando o aplicativo não consegue ler o nome de uma associação, ele pode manter o texto de exemplo padrão.
 
-Ative ou desative o menu do pulso e selecione em qual mão ele será exibido em **Configurações principais**. Use o ícone do pulso para abri-lo. O menu pode ficar oculto enquanto o painel do SteamVR estiver aberto. Consulte [problemas comuns](../troubleshooting/common-issues) se ele não aparecer.
+Ative ou desative o menu do pulso e selecione em qual mão ele será exibido em **Main settings**. Use o ícone do pulso para abri-lo. O menu pode ficar oculto enquanto o painel do SteamVR estiver aberto. Consulte [problemas comuns](../troubleshooting/common-issues) se ele não aparecer.

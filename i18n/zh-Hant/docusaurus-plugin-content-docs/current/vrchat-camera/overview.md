@@ -12,7 +12,7 @@
 2. 開啟**選項 → OSC**。
 3. 啟用 OSC。
 4. 顯示 VRChat User Camera。
-5. 在 OVR-DummyHeadMic 中開啟**主要設定**。
+5. 在 OVR-DummyHeadMic 中開啟**Main settings**。
 
 通常會自動偵測連線。在可使用 OSCQuery 的環境中，您可以同時使用其他支援 OSC 的應用程式。
 

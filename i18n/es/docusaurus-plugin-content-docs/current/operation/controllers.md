@@ -1,6 +1,6 @@
 # Comprobar las asignaciones de los controles
 
-Los nombres de los botones de VR dependen de las asignaciones de tus controles de SteamVR. La página **Cómo usar** de esta aplicación muestra los nombres de las asignaciones que puede leer en el paso 3 (agarrar la cabeza binaural). Comprueba primero esa pantalla.
+Los nombres de los botones de VR dependen de las asignaciones de tus controles de SteamVR. La página **How to use** de esta aplicación muestra los nombres de las asignaciones que puede leer en el paso 3 (agarrar la cabeza binaural). Comprueba primero esa pantalla.
 
 Las acciones habituales son las siguientes. Ambas manos funcionan igual.
 
@@ -22,4 +22,4 @@ La fila de botones contiene, de izquierda a derecha:
 
 Otros controles pueden usar nombres de botones diferentes. Si la pantalla de la aplicación no coincide con tu control, comprueba la asignación del control de esta aplicación en SteamVR. Cuando la aplicación no puede leer el nombre de una asignación, puede conservar el texto de ejemplo predeterminado.
 
-Activa o desactiva el menú de muñeca y selecciona en qué mano aparece en **Configuración principal**. Usa el icono de la muñeca para abrirlo. El menú puede permanecer oculto mientras está abierto el panel de SteamVR. Consulta [problemas comunes](../troubleshooting/common-issues) si no aparece.
+Activa o desactiva el menú de muñeca y selecciona en qué mano aparece en **Main settings**. Usa el icono de la muñeca para abrirlo. El menú puede permanecer oculto mientras está abierto el panel de SteamVR. Consulta [problemas comunes](../troubleshooting/common-issues) si no aparece.

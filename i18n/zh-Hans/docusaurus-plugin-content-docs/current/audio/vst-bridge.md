@@ -4,7 +4,7 @@ VST 桥接会将 DAW 中的音频通过 `VOrbit Bridge.vst3` 发送到本应用�
 
 ## 首次设置
 
-1. 在本应用的 **音频设备设置** 中，点击 **打开 VST 桥接文件夹**。
+1. 在本应用的 **Audio device settings** 中，点击 **打开 VST 桥接文件夹**。
 2. 将整个 `VOrbit Bridge.vst3` 文件夹复制到 VST3 扫描目录。单用户位置为 `%LOCALAPPDATA%\Programs\Common\VST3`，所有用户共用的位置为 `%COMMONPROGRAMFILES%\VST3`。如果 DAW 配置了其他扫描位置，请使用该位置。
 3. 在 DAW 中重新扫描插件，并在要处理的音频轨道上插入 **VOrbit Bridge**。如果将它插入麦克风轨道，请在 DAW 中启用输入监听。
 4. 将 DAW 采样率设置为 **44.1 kHz 或 48 kHz**。

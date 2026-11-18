@@ -9,7 +9,7 @@
 3. SteamVR을 시작한 다음 `OVR-DummyHeadMic.exe`를 실행하고 [처음으로 소리 재생하기](first-sound)를 진행합니다.
 
 :::tip
-SteamVR과 함께 앱을 매번 시작하려면 **기본 설정**에서 **SteamVR과 함께 자동 실행**을 켜세요([기본 설정 참고 자료](../operation/settings) 참조). 폴더를 옮겼다면 새 위치에서 `OVR-DummyHeadMic.exe`를 한 번 실행하세요.
+SteamVR과 함께 앱을 매번 시작하려면 **Main settings**에서 **SteamVR과 함께 자동 실행**을 켜세요([기본 설정 참고 자료](../operation/settings) 참조). 폴더를 옮겼다면 새 위치에서 `OVR-DummyHeadMic.exe`를 한 번 실행하세요.
 :::
 
 업데이트하려면 배포처에서 새로운 전체 패키지를 받으세요. 전체 패키지를 새 폴더에 압축 해제하면 이전 번들 파일과 새 파일이 섞이지 않습니다. 설정은 앱에 저장되지만 업데이트 후 오디오 경로, 장치 및 VRChat 동기화를 확인하세요.

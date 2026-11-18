@@ -4,7 +4,7 @@ A ponte VST envia o áudio de uma DAW pelo `VOrbit Bridge.vst3` para este aplica
 
 ## Configuração inicial
 
-1. Em **Configurações do dispositivo de áudio** deste aplicativo, clique em **Abrir pasta da ponte VST**.
+1. Em **Audio device settings** deste aplicativo, clique em **Abrir pasta da ponte VST**.
 2. Copie a pasta `VOrbit Bridge.vst3` inteira para um diretório de varredura de VST3. O local por usuário é `%LOCALAPPDATA%\Programs\Common\VST3`; o local para todos os usuários é `%COMMONPROGRAMFILES%\VST3`. Se a DAW estiver configurada para procurar em outro local, use-o.
 3. Faça uma nova varredura dos plug-ins na DAW e insira o **VOrbit Bridge** na faixa de áudio que você quer processar. Se você o inserir em uma faixa de microfone, ative o monitoramento da entrada na DAW.
 4. Defina a taxa de amostragem da DAW como **44.1 kHz ou 48 kHz**.

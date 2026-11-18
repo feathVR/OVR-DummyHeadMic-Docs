@@ -6,7 +6,7 @@ _La pantalla actual de Configuración principal en inglés, capturada desde la a
 
 ## Activar o desactivar el audio espacial
 
-Apunta a la cabeza binaural con el rayo para que aparezca una fila de botones debajo. Apunta al botón de audio espacial del extremo izquierdo y pulsa el gatillo para activar o desactivar el procesamiento de audio espacial. También puedes usar el botón **ASMR** de **Configuración principal**. La cabeza binaural es blanca cuando está ACTIVADO y roja cuando está DESACTIVADO. Consulta [los controles](controllers) para saber cómo usar la fila de botones.
+Apunta a la cabeza binaural con el rayo para que aparezca una fila de botones debajo. Apunta al botón de audio espacial del extremo izquierdo y pulsa el gatillo para activar o desactivar el procesamiento de audio espacial. También puedes usar el botón **ASMR** de **Main settings**. La cabeza binaural es blanca cuando está ACTIVADO y roja cuando está DESACTIVADO. Consulta [los controles](controllers) para saber cómo usar la fila de botones.
 
 ## Tipo de cabeza binaural
 

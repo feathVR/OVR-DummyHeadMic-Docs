@@ -2,7 +2,7 @@
 
 Abra as páginas de configurações pela navegação à esquerda no aplicativo. Primeiro, escolha uma [rota de áudio](../audio/routes); depois, ajuste somente as configurações necessárias.
 
-## Configurações principais
+## Main settings
 
 | Configuração | O que ela altera |
 | --- | --- |
@@ -16,7 +16,7 @@ Abra as páginas de configurações pela navegação à esquerda no aplicativo. 
 | Sincronizar com a câmera do VRChat | Inicia ou interrompe o acompanhamento da câmera. Primeiro, faça a [calibração](../vrchat-camera/calibration). |
 | Iniciar automaticamente com o SteamVR | Quando ativado, o aplicativo passa a iniciar junto com o SteamVR. Esta é a mesma configuração que **Inicialização/Desligamento → Escolher aplicativos de sobreposição na inicialização** no SteamVR; portanto, ambos os locais mostram o mesmo estado. |
 
-## Como usar
+## How to use
 
 Mostra as etapas dos fluxos de trabalho padrão e do VRChat. Os botões abaixo de cada conjunto de etapas abrem o vídeo tutorial e a página correspondente deste manual ([Reproduzir seu primeiro som](../getting-started/first-sound) para o uso padrão e [Sincronização da câmera do VRChat](../vrchat-camera/overview) para o VRChat). Quando o aplicativo está em inglês, o manual em inglês é aberto.
 
@@ -24,7 +24,7 @@ Mostra as etapas dos fluxos de trabalho padrão e do VRChat. Os botões abaixo d
 
 Escolha o idioma da interface com **Language / Idioma** na janela de configurações. Há 8 idiomas disponíveis: 日本語, English, 简体中文, 繁體中文, 한국어, Русский, Español e Português (Brasil). Toda a interface muda imediatamente, sem reiniciar, e os botões do manual em Como usar abrem o manual no idioma escolhido. Na primeira inicialização, o aplicativo usa o idioma de exibição do Windows se for um destes e se a fonte estiver disponível no PC; caso contrário, usa inglês. Os nomes das páginas do menu lateral (como Main settings) permanecem em inglês em todos os idiomas.
 
-## Configurações do dispositivo de áudio
+## Audio device settings
 
 **Rota de áudio** seleciona Normal ou Ponte VST. Normal usa as seleções de microfone e dispositivo de saída e conta com proteção contra falhas. Ponte VST usa as configurações de áudio da DAW. A redução de ruído está disponível em qualquer uma das rotas. Consulte [Escolher uma rota de áudio](../audio/routes).
 
