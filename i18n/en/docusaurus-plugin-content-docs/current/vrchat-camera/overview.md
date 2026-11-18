@@ -2,6 +2,10 @@
 
 This feature makes the dummy head microphone automatically follow the position of the VRChat User Camera. It reduces the mismatch where “the video is from the VRChat camera, but the audio comes from somewhere else.”
 
+:::caution Experimental feature (beta)
+This feature is unstable. Even after a full calibration, the position can drift depending on the frame rate, and sync can break when HMD tracking becomes unstable. If it drifts, [recalibrate](calibration).
+:::
+
 ## Before you start
 
 1. Open the VRChat Action Menu.

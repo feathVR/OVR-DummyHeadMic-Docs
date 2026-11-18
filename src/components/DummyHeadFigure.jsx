@@ -2,24 +2,24 @@ import React from 'react';
 import {FlowNodes, useFigureText} from './figure/parts';
 
 // 「ダミーヘッドの設置」の図解。
-//   part="place"  … 手で運んで置く流れ（「手動で移動する」の下）
+//   part="place"  … 掴んで運んで置く流れ（「掴んで動かす」の下）
 //   part="facing" … 顔の向き 前方／後方 を真上から見た図（「顔の向き」の下）
 //   variant="poster" … PNG書き出し用に全部をまとめた1600×900
 // 文言は本文（docs/operation/dummy-head.md と英語版）と食い違わないように直すこと。
-// 向きの実装: 右コントローラーの姿勢に追従し、前方はそこから180°回した姿勢（VRHandToOSC.cs FaceDirectionChange）。既定は前方。
+// 掴み方の実装: グリップで掴む（近くで掴む／ビームで指して掴む。DummyHeadGrab.cs）。前方はダミーヘッドが自分と向き合う姿勢。既定は前方。
 
 const TEXT = {
   ja: {
     title: <><em>ダミーヘッド</em>を置く</>,
-    lead: '右手で運んで、ボタンを離したところに置きます。顔の向きは2種類から選べます。',
-    placeLabel: 'ボタンを押し続けるとダミーヘッドが右手に追従し、離すとその位置に置かれる流れ',
+    lead: 'グリップで掴んで運び、離したところに置きます。顔の向きは2種類から選べます。',
+    placeLabel: '手を近づけて水色の輪郭線が出たらグリップで掴み、運んで離すとその位置に置かれる流れ',
     place: [
-      {icon: 'buttons', name: 'ボタンを押し続ける', note: '左手X＋右手A（または両手のA）'},
-      {icon: 'carry', name: '右手で運ぶ', note: '押している間、ダミーヘッドが右手に追従', badge: '押したまま'},
-      {icon: 'drop', name: '離して置く', note: 'ボタンを離した位置に置かれる'},
+      {icon: 'grip', name: 'グリップで掴む', note: '水色の輪郭線が出たら握る（ビームで指して握ってもよい）'},
+      {icon: 'carry', name: '運ぶ', note: '握っている間、ダミーヘッドが手について動く', badge: '握ったまま'},
+      {icon: 'drop', name: '離して置く', note: 'グリップを離した位置に固定される'},
     ],
     facingLabel: '顔の向きの設定。前方はダミーヘッドが自分と向き合い、後方は自分と同じ方向を向く（真上から見た図）',
-    facingTitle: '顔の向き（Main settings）',
+    facingTitle: '顔の向き（向きの反転／Main settings）',
     facingLegend: <>真上から見た図　<i className="gfig__dot" />額の赤い点が顔の正面</>,
     you: 'あなた',
     front: {name: '前方（Front）', note: '自分と向き合う', badge: '既定'},
@@ -29,15 +29,15 @@ const TEXT = {
   },
   en: {
     title: <>Place the <em>dummy head</em></>,
-    lead: 'Carry it with your right hand and release the buttons to place it. Choose one of two face directions.',
-    placeLabel: 'While you hold the buttons the dummy head follows your right hand; releasing them places it there',
+    lead: 'Grab it with the grip, carry it, and let go to place it. Choose one of two face directions.',
+    placeLabel: 'Bring your hand close, grip when the light-blue outline appears, carry it, and let go to place it there',
     place: [
-      {icon: 'buttons', name: 'Hold the buttons', note: 'Left X + right A (or A on both hands)'},
-      {icon: 'carry', name: 'Carry it', note: 'While held, the dummy head follows your right hand', badge: 'Keep holding'},
-      {icon: 'drop', name: 'Release to place', note: 'It stays where you release the buttons'},
+      {icon: 'grip', name: 'Grab with the grip', note: 'Squeeze when the light-blue outline appears (or point the beam and squeeze)'},
+      {icon: 'carry', name: 'Carry it', note: 'While you hold the grip, the dummy head moves with your hand', badge: 'Keep holding'},
+      {icon: 'drop', name: 'Let go to place', note: 'It stays where you release the grip'},
     ],
     facingLabel: 'Face direction setting. Front: the dummy head faces you. Back: it faces the same direction as you (top view)',
-    facingTitle: 'Face direction (Main settings)',
+    facingTitle: 'Face direction (Flip facing / Main settings)',
     facingLegend: <>Top view · <i className="gfig__dot" />red dot on the forehead = face</>,
     you: 'You',
     front: {name: 'Front', note: 'Faces you', badge: 'Default'},
@@ -48,14 +48,14 @@ const TEXT = {
 };
 
 const ICONS = {
-  // 左右のコントローラーと、押すボタン
-  buttons: (
+  // 輪郭線の出たダミーヘッドと、近づけたコントローラー（グリップを握る）
+  grip: (
     <>
-      <rect x="8" y="14" width="18" height="40" rx="9" />
-      <rect x="38" y="14" width="18" height="40" rx="9" />
-      <circle cx="17" cy="25" r="4.5" className="gfig__fill" />
-      <circle cx="47" cy="25" r="4.5" className="gfig__fill" />
-      <path d="M17 6v3M11 8l2 2.5M23 8l-2 2.5M47 6v3M41 8l2 2.5M53 8l-2 2.5" />
+      <ellipse cx="24" cy="26" rx="14" ry="16" />
+      <ellipse cx="24" cy="26" rx="19" ry="21" strokeDasharray="4 3" />
+      <circle cx="35" cy="19" r="2.8" className="gfig__red" />
+      <rect x="44" y="30" width="13" height="28" rx="6.5" />
+      <path d="M44 42h-4M44 47h-4" />
     </>
   ),
   // 横から見たダミーヘッドと、運ぶ向きの矢印

@@ -18,7 +18,7 @@ import CamSyncLimitsFigure from "@site/src/components/CamSyncLimitsFigure";
 - 収録範囲はアバターを中心に約2.5mです。範囲外では同期が一時停止し、戻ると再開します。
 - ワールド移動後は自動的に再接続します。
 - アバターを変更またはリロードした場合は再較正してください。
-- 同期を終了すると、Aボタンによる通常の手動設置へ戻ります。
+- 同期を終了すると、グリップで掴む通常の手動設置へ戻ります。
 
 <CamSyncLimitsFigure part="after" />
 

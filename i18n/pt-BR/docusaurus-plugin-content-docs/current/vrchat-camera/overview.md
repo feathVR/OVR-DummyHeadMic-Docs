@@ -2,6 +2,10 @@
 
 Este recurso faz o microfone de cabeça binaural seguir automaticamente a posição da User Camera do VRChat. Ele reduz a discrepância em que “o vídeo vem da câmera do VRChat, mas o áudio vem de outro lugar”.
 
+:::caution Recurso experimental (beta)
+Este recurso é instável. Mesmo após uma calibração completa, a posição pode se desviar conforme a taxa de quadros, e a sincronização pode falhar se o rastreamento do HMD ficar instável. Se ela se desviar, [calibre novamente](calibration).
+:::
+
 ## Antes de começar
 
 1. Abra o Action Menu do VRChat.

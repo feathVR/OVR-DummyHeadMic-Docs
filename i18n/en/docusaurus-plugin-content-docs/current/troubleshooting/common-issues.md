@@ -32,7 +32,8 @@ Mute the regular microphone input in OBS. Use only the Audio Output Capture that
 ## Cannot move the dummy head
 
 - Check that SteamVR recognizes both controllers.
-- Hold left-hand X + right-hand A, or both A buttons, at the same time.
+- Bring your hand close to the head and squeeze the grip after the light-blue outline appears. From a distance, point the beam at the head first, then squeeze.
+- Check that **Pin in place** in the button row is not ON. The dummy head cannot be grabbed while pinned.
 - If VRChat camera sync is active, end sync temporarily to return to manual placement.
 - For another controller or custom binding, check the [in-app binding names](../operation/controllers).
 

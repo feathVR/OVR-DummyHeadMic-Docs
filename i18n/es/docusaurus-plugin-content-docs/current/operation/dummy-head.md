@@ -2,21 +2,32 @@ import DummyHeadFigure from "@site/src/components/DummyHeadFigure";
 
 # Colocar la cabeza binaural
 
-## Moverla manualmente
+## Agarrarla y moverla
 
-Con las asignaciones habituales, la cabeza binaural sigue tu mano derecha mientras mantienes presionados X izquierdo + A derecho, o ambos botones A. Muévela a la posición deseada y suelta los botones. Comprueba los [nombres de las asignaciones en la aplicación](controllers) para tu control.
+La cabeza binaural se agarra con el grip del control para moverla. Puedes usar cualquiera de las dos manos. Al soltarla, se queda fija en ese lugar.
+
+- **Agarrar de cerca**: acerca la mano a la cabeza y aprieta el grip cuando aparezca un contorno azul claro a su alrededor. Puedes girarla libremente, como un objeto en la mano.
+- **Apuntar y agarrar**: apunta a la cabeza con el rayo y aprieta el grip. Se mueve sin dejar de mirarte; empuja el stick hacia arriba para alejarla, hacia abajo para acercarla y hacia los lados para desplazarla lateralmente.
+
+Comprueba los [nombres de las asignaciones en la aplicación](controllers) para tu control.
 
 <DummyHeadFigure part="place" />
 
+## Fijar posición
+
+Si pulsas **Fijar posición** en la fila de botones que aparece al apuntar a la cabeza con el rayo, la cabeza binaural no se moverá aunque intentes agarrarla. Así evitas moverla por accidente después de colocarla. Para quitarla, pulsa **Fijar posición** otra vez.
+
 ## Dirección de la cara
 
-Cámbiala en **Configuración principal**, en “Dirección de la cara al fijarla a la mano derecha”.
+Cámbiala con **Invertir orientación** en la fila de botones, o en **Configuración principal**, en “Orientación de la cabeza al colocarla con la mano derecha”.
 
-- **Frente**: la cabeza binaural mira hacia ti.
+- **Frente**: la cabeza binaural mira hacia ti (predeterminado).
 - **Atrás**: la cabeza binaural mira en la misma dirección que tú.
+
+Mantiene esta dirección también mientras la mueves apuntando con el rayo.
 
 <DummyHeadFigure part="facing" />
 
 ## Opacidad
 
-Ajusta la intensidad de visualización con “Opacidad de la cabeza binaural”. Si es completamente transparente, puede ser difícil localizarla, por lo que recomendamos dejarla ligeramente visible mientras la posicionas.
+Pulsa **Transparencia** en la fila de botones para cambiar entre cuatro niveles: 100→60→30→10%. En **Configuración principal**, “Transparencia de la cabeza” permite un ajuste fino e incluso hacerla totalmente transparente. Si es completamente transparente, puede ser difícil localizarla, por lo que recomendamos dejarla ligeramente visible mientras la posicionas.

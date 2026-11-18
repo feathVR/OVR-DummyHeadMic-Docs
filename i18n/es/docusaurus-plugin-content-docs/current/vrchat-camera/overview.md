@@ -2,6 +2,10 @@
 
 Esta función hace que el micrófono de cabeza binaural siga automáticamente la posición de la User Camera de VRChat. Reduce la discrepancia de que “el video proviene de la cámara de VRChat, pero el audio viene de otro lugar”.
 
+:::caution Función experimental (beta)
+Esta función es inestable. Incluso después de una calibración completa, la posición puede desviarse según la tasa de fotogramas, y la sincronización puede romperse si el seguimiento del HMD se vuelve inestable. Si se desvía, [vuelve a calibrar](calibration).
+:::
+
 ## Antes de comenzar
 
 1. Abre el Action Menu de VRChat.

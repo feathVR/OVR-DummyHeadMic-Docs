@@ -29,7 +29,7 @@ const TEXT = {
     needItems: ['アバターを変更・リロードした', <>カメラの前後（自撮り／外向き）を切り替えた<small>元に戻せば不要</small></>],
     auto: '自動で戻る',
     autoItems: [<>ワールドを移動した<small>自動で再接続</small></>, <>範囲外に出た<small>約2.5m以内に戻れば再開</small></>],
-    endNote: '同期を終了すると、Aボタンによる通常の手動設置へ戻ります。',
+    endNote: '同期を終了すると、グリップで掴む通常の手動設置へ戻ります。',
   },
   en: {
     title: <>Camera sync <em>coverage</em></>,
@@ -51,7 +51,7 @@ const TEXT = {
     needItems: ['You changed or reloaded your avatar', <>You switched the camera between selfie and outward<small>Not needed if you switch it back</small></>],
     auto: 'Recovers automatically',
     autoItems: [<>You moved to another world<small>Reconnects automatically</small></>, <>The camera left the range<small>Resumes within about 2.5 m</small></>],
-    endNote: 'When you end sync, the A buttons return to normal manual placement.',
+    endNote: 'When you end sync, you can grab and place it manually again with the grip.',
   },
 };
 

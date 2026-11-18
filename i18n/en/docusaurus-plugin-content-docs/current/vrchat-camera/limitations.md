@@ -18,7 +18,7 @@ Only **Local Anchor** is supported. The following features are not supported:
 - The tracking range is approximately 2.5 m around the avatar. Sync pauses temporarily outside this range and resumes when you return.
 - The app reconnects automatically after changing worlds.
 - Calibrate again after changing or reloading your avatar.
-- When you end sync, you can place the dummy head manually again with the A button.
+- When you end sync, you can grab and place the dummy head manually again with the grip.
 
 <CamSyncLimitsFigure part="after" />
 

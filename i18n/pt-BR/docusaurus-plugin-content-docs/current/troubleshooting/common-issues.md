@@ -32,7 +32,8 @@ Silencie a entrada de microfone convencional no OBS. Para sua transmissão, use 
 ## Não é possível mover a cabeça binaural
 
 - Verifique se o SteamVR reconhece os dois controles.
-- Mantenha pressionados X da mão esquerda + A da mão direita ou os dois botões A ao mesmo tempo.
+- Aproxime a mão da cabeça e aperte o grip depois que o contorno azul-claro aparecer. De longe, aponte primeiro o raio para a cabeça e depois aperte.
+- Verifique se **Fixar posição** não está ativado na fileira de botões. Enquanto estiver fixada, ela não pode ser pega.
 - Se a sincronização da câmera do VRChat estiver ativa, encerre-a temporariamente para voltar ao posicionamento manual.
 - Para outro controle ou uma associação personalizada, verifique no aplicativo os [nomes das associações](../operation/controllers).
 

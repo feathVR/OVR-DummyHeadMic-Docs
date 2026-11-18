@@ -18,7 +18,7 @@ import CamSyncLimitsFigure from "@site/src/components/CamSyncLimitsFigure";
 - 추적 범위는 아바타 주변 약 2.5 m입니다. 이 범위를 벗어나면 동기화가 일시 정지되고 돌아오면 재개됩니다.
 - 월드를 변경한 뒤에는 앱이 자동으로 다시 연결됩니다.
 - 아바타를 변경하거나 다시 불러온 뒤에는 다시 보정하세요.
-- 동기화를 종료하면 A 버튼으로 더미 헤드를 다시 수동 배치할 수 있습니다.
+- 동기화를 종료하면 그립으로 더미 헤드를 잡아 다시 수동 배치할 수 있습니다.
 
 <CamSyncLimitsFigure part="after" />
 

@@ -18,7 +18,7 @@ Solo se admite **Local Anchor**. Las siguientes funciones no son compatibles:
 - El rango de seguimiento es de aproximadamente 2.5 m alrededor del avatar. La sincronización se pausa temporalmente fuera de este rango y se reanuda cuando regresas.
 - La aplicación se vuelve a conectar automáticamente después de cambiar de mundo.
 - Calibra de nuevo después de cambiar o volver a cargar tu avatar.
-- Al finalizar la sincronización, puedes volver a colocar manualmente la cabeza binaural con el botón A.
+- Al finalizar la sincronización, puedes volver a agarrar la cabeza binaural con el grip y colocarla manualmente.
 
 <CamSyncLimitsFigure part="after" />
 

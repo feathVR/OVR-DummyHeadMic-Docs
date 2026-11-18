@@ -18,7 +18,7 @@ Somente o **Local Anchor** é compatível. Os seguintes recursos não são compa
 - O alcance do rastreamento é de aproximadamente 2.5 m ao redor do avatar. A sincronização pausa temporariamente fora desse alcance e é retomada quando você volta.
 - O aplicativo se reconecta automaticamente depois que você muda de mundo.
 - Calibre novamente depois de trocar ou recarregar seu avatar.
-- Quando você encerra a sincronização, pode voltar a posicionar a cabeça binaural manualmente com o botão A.
+- Quando você encerra a sincronização, pode voltar a pegar a cabeça binaural com o grip e posicioná-la manualmente.
 
 <CamSyncLimitsFigure part="after" />
 

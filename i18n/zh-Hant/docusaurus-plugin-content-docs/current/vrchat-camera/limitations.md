@@ -18,7 +18,7 @@ import CamSyncLimitsFigure from "@site/src/components/CamSyncLimitsFigure";
 - 追蹤範圍約為虛擬人偶周圍 2.5 m。超出此範圍時同步會暫停，返回範圍後會恢復。
 - 切換世界後，應用程式會自動重新連線。
 - 變更或重新載入虛擬人偶後，請重新校正。
-- 結束同步後，即可再次使用 A 按鈕手動放置假人頭。
+- 結束同步後，即可再次用握把抓住假人頭，手動放置。
 
 <CamSyncLimitsFigure part="after" />
 
